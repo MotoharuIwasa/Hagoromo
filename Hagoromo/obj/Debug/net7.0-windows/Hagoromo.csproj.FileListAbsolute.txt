@@ -1,0 +1,16 @@
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net7.0-windows\Hagoromo.deps.json
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net7.0-windows\Hagoromo.runtimeconfig.json
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net7.0-windows\Hagoromo.gha
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net7.0-windows\Hagoromo.pdb
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.csproj.AssemblyReference.cache
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.AssemblyInfoInputs.cache
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.AssemblyInfo.cs
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.csproj.CoreCompileInputs.cache
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.gha
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\refint\Hagoromo.gha
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.pdb
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.genruntimeconfig.cache
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\ref\Hagoromo.gha
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net7.0-windows\Cloo.dll
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net7.0-windows\Hagoromo.csproj.CopyComplete

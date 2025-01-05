@@ -1,0 +1,11 @@
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net48\Hagoromo.gha
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net48\Hagoromo.pdb
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.csproj.AssemblyReference.cache
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.AssemblyInfoInputs.cache
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.AssemblyInfo.cs
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.csproj.CoreCompileInputs.cache
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.gha
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.pdb
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net48\Cloo.dll
+C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.csproj.CopyComplete
