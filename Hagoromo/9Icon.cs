@@ -18,7 +18,7 @@ namespace Hagoromo
 
         protected override void RegisterInputParams(GH_InputParamManager pManager)
         {
-            var defaultConstraints = new List<int> { 0, 0, 0, 0, 0, 0 };
+            var defaultConstraints = new List<int> { 1, 1, 1, 1, 1, 1 };
             pManager.AddPointParameter("Points", "P", "Points defining the Icon", GH_ParamAccess.list);
             pManager.AddIntegerParameter("Constraints", "Con", "Constraint of the points", GH_ParamAccess.list, defaultConstraints);
 

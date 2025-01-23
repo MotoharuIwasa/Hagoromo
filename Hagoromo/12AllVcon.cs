@@ -89,7 +89,7 @@ namespace Hagoromo
         {
             get
             {
-                return null; // Add your custom icon here
+                return null; 
             }
         }
 

@@ -31,7 +31,7 @@ namespace Hagoromo
 
         public override string ToString()
         {
-            return $"AllVcondata with {Value.NodeArray.GetLength(0)} nodes and {Value.VconArray.GetLength(0)} Vcon entries";
+            return $"AllVcondata with {Value.NodeArray.GetLength(0)} nodes";
         }
 
         public override bool IsValid => Value != null;

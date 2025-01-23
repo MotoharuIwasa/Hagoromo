@@ -33,7 +33,7 @@ namespace Hagoromo
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
-            pManager.AddTextParameter("AllElemdata", "E", "Combined element data", GH_ParamAccess.list);
+            pManager.AddGenericParameter("AllElemdata", "E", "Combined element data", GH_ParamAccess.list);
             pManager.AddTextParameter("Contents", "C", "Contents of AllElemdata", GH_ParamAccess.list);
         }
 

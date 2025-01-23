@@ -43,8 +43,8 @@ namespace Hagoromo
             pManager.AddLineParameter("Lines", "L", "The lines to calculate nodes", GH_ParamAccess.list);
             pManager.AddIntegerParameter("SectId", "SId", "Section Id of the element", GH_ParamAccess.item,11);
             pManager.AddIntegerParameter("Constraint", "Con", "Constraint of the element ends", GH_ParamAccess.list, defaultConstraints);
-            pManager.AddNumberParameter("CMQ", "CMQ", "CMQ values", GH_ParamAccess.list, defaultCMQ);
             pManager.AddNumberParameter("CordAngle", "Ang", "Cord angle Value", GH_ParamAccess.item, 0.0);
+            pManager.AddNumberParameter("CMQ", "CMQ", "CMQ values", GH_ParamAccess.list, defaultCMQ);
         }
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
@@ -57,18 +57,17 @@ namespace Hagoromo
             List<Line> lines = new List<Line>();
             int sectId = 0;
             List<int> constraint = new List<int>();
-            List<double> cmq = new List<double>();
             double cordAngle = 0.0;
+            List<double> cmq = new List<double>();
 
             if (!DA.GetDataList(0, lines)) return;
             if (!DA.GetData(1, ref sectId)) return;
             if (!DA.GetDataList(2, constraint)) return;
-            if (!DA.GetDataList(3, cmq)) return;
-            if (!DA.GetData(4, ref cordAngle)) return;
+            if (!DA.GetData(3, ref cordAngle)) return;
+            if (!DA.GetDataList(4, cmq)) return;
 
             Elemdata elemdata = new Elemdata(sectId, constraint, cmq, cordAngle, lines);
 
-            // Wrap Elemdata in GH_Elemdata
             DA.SetData(0, new GH_Elemdata(elemdata));
         }
 
