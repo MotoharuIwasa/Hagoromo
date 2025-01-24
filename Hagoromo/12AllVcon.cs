@@ -76,8 +76,8 @@ namespace Hagoromo
 
             // Generate output strings for visualization
             var nodeText = string.Join("\n", Enumerable.Range(0, _nodes.Count).Select(i =>
-                $"V{i} X: {nodeArray[i, 0]}, Y: {nodeArray[i, 1]}, Z: {nodeArray[i, 2]} | " +
-                $"Forces: [{string.Join(",", (double[])vconArray[i,0])}]"
+                $"V{i} X:{nodeArray[i, 0]:F2}, Y:{nodeArray[i, 1]:F2}, Z:{nodeArray[i, 2]:F2} " +
+                $"F:[{string.Join(",", (double[])vconArray[i,0])}]"
             ));
 
             // Set outputs

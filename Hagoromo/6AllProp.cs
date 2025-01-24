@@ -54,8 +54,8 @@ namespace Hagoromo
                 propertyArray[i, 3] = propData.YoungsModulus;
                 propertyArray[i, 4] = propData.PoissonsRatio;
 
-                contentStrings.Add($"P{i + 1}: Name: {propData.Name}, Id: {propData.Id}, Density: {propData.Density}, " +
-                    $"Young's Modulus: {propData.YoungsModulus}, Poisson's Ratio: {propData.PoissonsRatio}");
+                contentStrings.Add($"P{i + 1}:{propData.Name}, PId:{propData.Id}, Den:{propData.Density}, " +
+                    $"E:{propData.YoungsModulus}, POI:{propData.PoissonsRatio}");
             }
 
             var allPropdata = new AllPropdata(propertyArray);

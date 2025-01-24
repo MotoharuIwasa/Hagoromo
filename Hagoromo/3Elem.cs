@@ -22,15 +22,15 @@ namespace Hagoromo
             public int SectId { get; set; }
             public List<int> Constraint { get; set; }
             public List<double> CMQ { get; set; }
-            public double CordAngle { get; set; }
+            public List<object> RotInfo { get; set; }
             public List<Line> Lines { get; set; }
 
-            public Elemdata(int sectId, List<int> constraint, List<double> cmq, double cordAngle, List<Line> lines)
+            public Elemdata(int sectId, List<int> constraint, List<double> cmq, List<object> rotInfo, List<Line> lines)
             {
                 SectId = sectId;
                 Constraint = constraint;
                 CMQ = cmq;
-                CordAngle = cordAngle;
+                RotInfo = rotInfo;
                 Lines = lines;
             }
         }
@@ -66,7 +66,24 @@ namespace Hagoromo
             if (!DA.GetData(3, ref cordAngle)) return;
             if (!DA.GetDataList(4, cmq)) return;
 
-            Elemdata elemdata = new Elemdata(sectId, constraint, cmq, cordAngle, lines);
+            // Use a list of lists to store rotInfo for each line
+            List<object> rotInfo = new List<object>();
+
+            for (int i = 0; i < lines.Count; i++)
+            {
+                Line line = lines[i];
+                double dx = line.To.X - line.From.X;
+                double dy = line.To.Y - line.From.Y;
+                double dz = line.To.Z - line.From.Z;
+                double length = line.Length;
+                double angle = cordAngle;
+
+                List<double> lineRotInfo = new List<double> { angle, length, dx, dy, dz };
+
+                rotInfo.Add(lineRotInfo);
+            }
+
+            Elemdata elemdata = new Elemdata(sectId, constraint, cmq, rotInfo, lines);
 
             DA.SetData(0, new GH_Elemdata(elemdata));
         }

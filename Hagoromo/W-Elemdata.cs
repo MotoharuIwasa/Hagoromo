@@ -15,7 +15,7 @@ namespace Hagoromo
                 Value.SectId,
                 new List<int>(Value.Constraint),
                 new List<double>(Value.CMQ),
-                Value.CordAngle,
+                new List<object>(Value.RotInfo),
                 new List<Line>(Value.Lines)
             ));
         }
@@ -23,9 +23,6 @@ namespace Hagoromo
         public override string ToString()
         {
             return $"Elemdata Sect{Value.SectId}";
-            
-            //return $"Elemdata: SectId={Value.SectId}, Constraints=[{string.Join(",", Value.Constraint)}], " +
-            //       $"CMQ=[{string.Join(",", Value.CMQ)}], CordAngle={Value.CordAngle}";
         }
 
         public override bool IsValid => Value != null;

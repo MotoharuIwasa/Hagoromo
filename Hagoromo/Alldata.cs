@@ -192,9 +192,9 @@ namespace Hagoromo
                 var node1 = combinedNodeArray[i, 1];
                 var node2 = combinedNodeArray[i, 2];
 
-                var position = string.Join(", ", ((double[])node0).Select(d => d.ToString("F2")));
-                var icon = string.Join(", ", (int[])node1);
-                var vcon = string.Join(", ", ((double[])node2).Select(d => d.ToString("F2")));
+                var position = string.Join(",", ((double[])node0).Select(d => d.ToString("F2")));
+                var icon = string.Join(",", (int[])node1);
+                var vcon = string.Join(",", ((double[])node2).Select(d => d.ToString("F2")));
                 contentsTree.Add($"[{position}],[{icon}],[{vcon}]", new GH_Path(3));
             }
 
@@ -202,14 +202,14 @@ namespace Hagoromo
             for (int i = 0; i < elemdata.ElementArray.GetLength(0); i++)
             {
                 var row = new List<string>
-                {
-                elemdata.ElementArray[i, 0]?.ToString() ?? "null",
-                $"[{string.Join(", ", (int[])elemdata.ElementArray[i, 1])}]",
-                $"[{string.Join(", ", (int[])elemdata.ElementArray[i, 2])}]",
-                elemdata.ElementArray[i, 3]?.ToString() ?? "null",
-                $"[{string.Join(", ", (double[])elemdata.ElementArray[i, 4])}]"
-                };
-                    contentsTree.Add(string.Join(", ", row), new GH_Path(4));
+                    {
+                        elemdata.ElementArray[i, 0]?.ToString() ?? "null",
+                        $"[{string.Join(",", (int[])elemdata.ElementArray[i, 1])}]",
+                        $"[{string.Join(",", (int[])elemdata.ElementArray[i, 2])}]",
+                        $"[{string.Join(",", ((double[])elemdata.ElementArray[i, 3]).Select(d => d.ToString("F2")))}]",
+                        $"[{string.Join(",", ((double[])elemdata.ElementArray[i, 4]).Select(d => d.ToString("F2")))}]"
+                    };
+                contentsTree.Add(string.Join(", ", row), new GH_Path(4));
             }
 
             DA.SetData(0, new GH_Alldata(alldata));

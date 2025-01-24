@@ -56,9 +56,9 @@ namespace Hagoromo
                 sectionArray[i, 5] = sectdata.IYY;      // Moment of Inertia (Y-axis)
                 sectionArray[i, 6] = sectdata.VEN;      // Shear Area Coefficient
 
-                contentStrings.Add($"S{i + 1}: Name: {sectdata.SectName}, " +
-                    $"ID: {sectdata.SectId}, PropId: {sectdata.PropId}, Area: {sectdata.Area}, " +
-                    $"IXX: {sectdata.IXX}, IYY: {sectdata.IYY}, VEN: {sectdata.VEN}");
+                contentStrings.Add($"S{i + 1}:{sectdata.SectName}, " +
+                    $"SId:{sectdata.SectId}, PId:{sectdata.PropId}, A:{sectdata.Area}, " +
+                    $"IX:{sectdata.IXX}, IY:{sectdata.IYY}, VEN:{sectdata.VEN}");
             }
 
             var allSectdata = new AllSectdata(sectionArray);

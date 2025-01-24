@@ -74,8 +74,8 @@ namespace Hagoromo
             var combinedData = new AllIcondata(nodeArray, iconArray);
 
             var nodeText = string.Join("\n", Enumerable.Range(0, _nodes.Count).Select(i =>
-                $"I{i} X: {nodeArray[i, 0]}, Y: {nodeArray[i, 1]}, Z: {nodeArray[i, 2]} | " + 
-                $"Constraints: [{string.Join(",", (int[])iconArray[i, 0])}] "
+                $"I{i} X:{nodeArray[i, 0]:F2},Y: {nodeArray[i, 1]:F2}, Z:{nodeArray[i, 2]:F2} " +
+                $"Con:[{string.Join(",", (int[])iconArray[i, 0])}] "
             ));
 
             DA.SetData(0, new GH_AllIcondata(combinedData));

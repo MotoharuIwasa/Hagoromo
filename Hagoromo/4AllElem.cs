@@ -92,6 +92,7 @@ namespace Hagoromo
                     continue;
 
                 var elemData = ghElemData.Value;
+                int lineCounter = 0;
 
                 foreach (var line in elemData.Lines)
                 {
@@ -107,9 +108,10 @@ namespace Hagoromo
                     elementArray[elementCounter, 0] = elemData.SectId; // SECT
                     elementArray[elementCounter, 1] = new int[] { startIndex + 101, endIndex + 101 }; // NODE
                     elementArray[elementCounter, 2] = elemData.Constraint?.ToArray() ?? new int[0]; // ENDS
-                    elementArray[elementCounter, 3] = elemData.CordAngle; // ANGL
+                    elementArray[elementCounter, 3] =(elemData.RotInfo[lineCounter] as List<double>)?.ToArray(); //ROTS
                     elementArray[elementCounter, 4] = elemData.CMQ?.ToArray() ?? new double[0]; // CMQS
 
+                    lineCounter++;
                     elementCounter++;
                 }
             }
@@ -119,18 +121,19 @@ namespace Hagoromo
 
             // Generate output strings for nodes and elements
             var nodeText = string.Join("\n", Enumerable.Range(0, _nodes.Count).Select(i =>
-                $"N{i + 101}: X: {nodeArray[i, 0]}, Y: {nodeArray[i, 1]}, Z: {nodeArray[i, 2]}"
+                $"N{i + 101} X:{nodeArray[i, 0]:F2}, Y:{nodeArray[i, 1]:F2}, Z:{nodeArray[i, 2]:F2}"
             ));
 
             var elementText = string.Join("\n", Enumerable.Range(0, elementCounter).Select(i =>
             {
                 var nodes = (int[])elementArray[i, 1];
                 var ends = (int[])elementArray[i, 2];
-                var cmqs = (double[])elementArray[i, 4];
+                var rots = (double[])elementArray[i, 3];
+                new List<string>(); var cmqs = (double[])elementArray[i, 4];
 
-                return $"E{i + 1000}: SECT: {elementArray[i, 0]}, NODE: [{nodes[0]}, {nodes[1]}], " +
-                       $"ENDS: [{string.Join(", ", ends)}], ANGL: {elementArray[i, 3]}, " +
-                       $"CMQS: [{string.Join(", ", cmqs)}]";
+                return $"E{i + 1000} SId:{elementArray[i,0]},NODE:[{nodes[0]},{nodes[1]}]," +
+                       $"ENDS:[{string.Join(",", ends)}], ROTS:[{string.Join(",", rots.Select(c => c.ToString("F2")))}]," +
+                       $"CMQS:[{string.Join(",", cmqs.Select(c => c.ToString("F2")))}]";
             }));
 
             // Set outputs
