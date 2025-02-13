@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yuyou\\Desktop\\Personal\\Grasshopper Plugin\\Hagoromo\\Hagoromo.csproj": {}
+    "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\Hagoromo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yuyou\\Desktop\\Personal\\Grasshopper Plugin\\Hagoromo\\Hagoromo.csproj": {
+    "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\Hagoromo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuyou\\Desktop\\Personal\\Grasshopper Plugin\\Hagoromo\\Hagoromo.csproj",
+        "projectUniqueName": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\Hagoromo.csproj",
         "projectName": "Hagoromo",
-        "projectPath": "C:\\Users\\yuyou\\Desktop\\Personal\\Grasshopper Plugin\\Hagoromo\\Hagoromo.csproj",
-        "packagesPath": "C:\\Users\\yuyou\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuyou\\Desktop\\Personal\\Grasshopper Plugin\\Hagoromo\\obj\\",
+        "projectPath": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\Hagoromo.csproj",
+        "packagesPath": "C:\\Users\\moto1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\yuyou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moto1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,7 +52,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -93,15 +99,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.20, 7.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.20, 7.0.20]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.20, 7.0.20]"
             }
           ],
           "frameworkReferences": {
@@ -109,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
@@ -138,15 +144,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.20, 7.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.20, 7.0.20]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.20, 7.0.20]"
             }
           ],
           "frameworkReferences": {
@@ -157,7 +163,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
@@ -172,7 +178,7 @@
               "version": "[7.0.20314.3001, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -9,3 +9,15 @@ C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hago
 C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.pdb
 C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\bin\Debug\net48\Cloo.dll
 C:\Users\yuyou\Desktop\Personal\Grasshopper Plugin\Hagoromo\obj\Debug\net48\Hagoromo.csproj.CopyComplete
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.csproj.AssemblyReference.cache
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.AssemblyInfoInputs.cache
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.AssemblyInfo.cs
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.csproj.CoreCompileInputs.cache
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.sourcelink.json
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.gha
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.pdb
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\bin\Debug\net48\Hagoromo.gha
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\bin\Debug\net48\Hagoromo.pdb
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\bin\Debug\net48\Cloo.dll
+C:\Users\moto1\githubCode\HagoromoCode\Hagoromo\Hagoromo\obj\Debug\net48\Hagoromo.csproj.Up2Date
