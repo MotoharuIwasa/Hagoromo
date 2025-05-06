@@ -66,6 +66,141 @@ namespace Hagoromo
             }
         }
 
+        //p=Kuのp,uの並び替えに伴ってKを並び変えて4つのブロックで出力する関数//
+        static double[,,] MakeModifiedMatrix(double[,] matrix, bool[] flags)
+        {
+            int false_count = 0;
+            int flags_size = flags.Length;
+            for (int i = 0; i < flags_size; i++)
+            {
+                if (!flags[i])
+                {
+                    false_count += 1;
+                }
+            }
+            int true_count = flags_size - false_count;
+            int[] false_id = new int[false_count];
+            int[] true_id = new int[true_count];
+            int false_id_count = 0;
+            int true_id_count = 0;
+            for (int i = 0; i < flags_size; i++)
+            {
+                if (!flags[i])
+                {
+                    false_id[false_id_count] = i;
+                    false_id_count += 1;
+                }
+                if (flags[i])
+                {
+                    true_id[true_id_count] = i;
+                    true_id_count += 1;
+                }
+            }
+
+            double[,] matrix_ff = new double[false_count, false_count];
+            double[,] matrix_fs = new double[false_count, true_count];
+            double[,] matrix_sf = new double[true_count, false_count];
+            double[,] matrix_ss = new double[true_count, true_count];
+
+            for (int i = 0; i < false_count; i++)
+            {
+                for (int j = 0; j < false_count; j++)
+                {
+                    matrix_ff[i, j] = matrix[false_id[i], false_id[j]];
+                }
+            }
+
+            for (int i = 0; i < true_count; i++)
+            {
+                for (int j = 0; j < true_count; j++)
+                {
+                    matrix_ss[i, j] = matrix[true_id[i], true_id[j]];
+                }
+            }
+
+            for (int i = 0; i < false_count; i++)
+            {
+                for (int j = 0; j < true_count; j++)
+                {
+                    matrix_fs[i, j] = matrix[false_id[i], true_id[j]];
+                }
+            }
+
+            for (int i = 0; i < true_count; i++)
+            {
+                for (int j = 0; j < false_count; j++)
+                {
+                    matrix_sf[i, j] = matrix[true_id[i], false_id[j]];
+                }
+            }
+
+            double[,,] matrices = [matrix_ff, matrix_fs, matrix_sf, matrix_ss];
+            return matrices;
+        }
+
+        //連立一次方程式Ax=bをLDL分解で解く,ただしAは実対称行列の下三角を上の行から順に行ずつで並べた配列//
+        static double[] SolveByLDL(double[] A, double[] b)
+        {
+            int n = b.Length;//nは行列のサイズ//
+            double[] U = new double[n*(n+1)/2];//Uは上三角成分のみを下の行から順に行ずつで並べた配列//
+            double[] L = new double[n*(n-1)/2];//Lは下三角成分(1のところも省く)を上の行から順に行ずつで並べた配列//
+
+            //次のfor文で帰納的にU,Lを求めるが最初にその初項を設定//
+            int t = n * (n - 1) / 2;
+            for (int j = 1; j <= n; i++)
+            {
+                U[t + j - 1] = A[j - 1]; //u_1j=a_1j//
+                L[j * (j - 3) / 2 + 1] = U[t + j - 1] / U[t]; //l_j1=u_1j/u_11//
+            }
+
+            //U,Lをそれぞれ求める//
+            int s = 0;
+            int id = 0;
+            for (int i = 2; i <= n; i++)
+            {
+                for (int j = i; j <= n; j++)
+                {
+                    s = 0;
+                    for (int k = 1; k <= i - 1; k++)
+                    {
+                        s += L[i * (i - 3) / 2 + k] * U[(n - k) * (n - k + 1) + j - k];
+                    }
+                    id = (n - i) * (n - i + 1) / 2 + j - i;
+                    U[id] = A[j * (j - 1) + i - 1] - s;//u_ijを求める//
+
+                    if (i != j)
+                    {
+                        L[j * (j - 3) / 2 + i] = U[id] / U[(n - i) * (n - i + 1) / 2]//l_ijを求める//
+                    }
+                }
+            }
+
+            //ガウスの前進消去法でyを求める、yが順に求まり次第、メモリ削減のためにそれをbに上書きしていく//
+            //y1=b1なので初項は省略できる//
+            for (int i = 2;i<= n; i++)
+            {
+                s = 0;
+                for (int j = 1; j <= i-1; j++)
+                {
+                    s += L[i * (i - 3) / 2 + j] * b[j - 1];
+                }
+                b[i - 1] -= s;
+            }
+
+            //後退代入でxを求める、xが後ろから順に求まり次第、メモリ削減のためにそれをbに上書きしていく//
+            b[n - 1] = b[n - 1] / U[0];
+            for (int i = 1; i <= n-1; i++)
+            {
+                s = 0;
+                for (int j = n-i+1; j <= n; j++)
+                {
+                    s += U[i * (i + 3) / 2 + j - n] * b[j - 1];
+                }
+                b[n - i - 1] = (b[n - i - 1] - s) / U[i * (i + 1) / 2];
+            }
+            return b;
+        }
+
         //Coordされた要素剛性マトリクスを構成する部分作成のための関数//
         static double[,] MakeCoordElemPartType1(double[,] Coord, double d, double h, double i)
         {
@@ -78,6 +213,7 @@ namespace Hagoromo
 
             return coord_elem_part1;
         }
+
         static double[,] MakeCoordElemPartType2(double[,] Coord, double a, double b)
         {
             double[,] coord_elem_part2 = new double[3, 3]
@@ -202,18 +338,43 @@ namespace Hagoromo
             return global_k;
         }
 
+        //Pfを算出する、CMQの分配、Vcon、自重の考慮//
+
+        //計算のために全体剛性マトリクスを並び変えて4つのブロックKff,Kfs,Ksf,Kssを作成する//
+        static double[,,] MakeModifiedGlobalK(Alldata alldata)
+        {
+            double[,] global_k = MakeGlobalK(alldata);
+            int global_k_size = global_k.GetLength(0);
+            bool[] icondata = new bool[global_k_size];
+            for (int i = 0; i < global_k_size / 6; i++)
+            {
+                for (int j = 0; j < 6; j++)
+                { if (global_k[i, j]
+                    icondata[i * 6 + j] = alldata.NodeArray[i][1][j];
+                }
+            }
+            double[,,] modified_global_k = MakeModifiedMatrix(global_k, icondata);
+            double[,] k_ff = modified_global_k[0];
+            double[,] k_fs = modified_global_k[1];
+            double[,] k_sf = modified_global_k[2];
+            double[,] k_ss = modified_global_k[3];
+        }
+
+        //連立一次方程式を解く//
+
+
+        //iconの型をboolに直す、nodearrayなどのデータ型を[,]にする。[][]ではない、データ型作り直す//
+
+        //C++で記述しておいて、UIだけC#で行う。奥村のやってくれたデータ構成の部分をC#からC++にデータを読み込ませるときに同時に作成させる//
 
 
 
 
 
 
-
-
-
-        /// <summary>
-        /// Registers all the input parameters for this component.
-        /// </summary>
+            /// <summary>
+            /// Registers all the input parameters for this component.
+            /// </summary>
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
         }
