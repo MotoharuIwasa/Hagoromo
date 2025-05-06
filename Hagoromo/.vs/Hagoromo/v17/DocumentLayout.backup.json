@@ -1,22 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\",
+  "WorkspaceRootPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\LinearBeam1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\LinearBeam1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LinearBeam1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\githubcode\\hagoromocode\\hagoromo\\hagoromo\\w-matrixcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:w-matrixcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\10allicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:10allicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\githubcode\\hagoromocode\\hagoromo\\hagoromo\\3elem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\3elem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:3elem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\githubcode\\hagoromocode\\hagoromo\\hagoromo\\hagoromoinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\hagoromoinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:hagoromoinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\w-matrixcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:w-matrixcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\alldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:alldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\7sect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:7sect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\5prop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:5prop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\11vcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:11vcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\w-allelemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:w-allelemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo\\w-alldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:w-alldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +54,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "3Elem.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\3Elem.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\3Elem.cs",
               "RelativeDocumentMoniker": "3Elem.cs",
-              "ToolTip": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\3Elem.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\3Elem.cs",
               "RelativeToolTip": "3Elem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-09T13:52:17.59Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Alldata.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\Alldata.cs",
+              "RelativeDocumentMoniker": "Alldata.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\Alldata.cs",
+              "RelativeToolTip": "Alldata.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAmwEoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T07:43:16.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "7Sect.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\7Sect.cs",
+              "RelativeDocumentMoniker": "7Sect.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\7Sect.cs",
+              "RelativeToolTip": "7Sect.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T07:42:34.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "5Prop.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\5Prop.cs",
+              "RelativeDocumentMoniker": "5Prop.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\5Prop.cs",
+              "RelativeToolTip": "5Prop.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwCUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T07:41:31.745Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "10AllIcon.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\10AllIcon.cs",
+              "RelativeDocumentMoniker": "10AllIcon.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\10AllIcon.cs",
+              "RelativeToolTip": "10AllIcon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T07:41:20.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "11Vcon.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\11Vcon.cs",
+              "RelativeDocumentMoniker": "11Vcon.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\11Vcon.cs",
+              "RelativeToolTip": "11Vcon.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T07:41:08.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "W-AllElemdata.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\W-AllElemdata.cs",
+              "RelativeDocumentMoniker": "W-AllElemdata.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\W-AllElemdata.cs",
+              "RelativeToolTip": "W-AllElemdata.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T07:38:25.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "W-MatrixContainer.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\W-MatrixContainer.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\W-MatrixContainer.cs",
               "RelativeDocumentMoniker": "W-MatrixContainer.cs",
-              "ToolTip": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\W-MatrixContainer.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\W-MatrixContainer.cs",
               "RelativeToolTip": "W-MatrixContainer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T13:38:57.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2025-02-12T13:38:57.9Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "LinearBeam1.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\LinearBeam1.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\LinearBeam1.cs",
               "RelativeDocumentMoniker": "LinearBeam1.cs",
-              "ToolTip": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\LinearBeam1.cs*",
-              "RelativeToolTip": "LinearBeam1.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\LinearBeam1.cs",
+              "RelativeToolTip": "LinearBeam1.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAHwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-09T13:48:33.765Z",
               "EditorCaption": ""
@@ -75,13 +170,25 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "HagoromoInfo.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\HagoromoInfo.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\HagoromoInfo.cs",
               "RelativeDocumentMoniker": "HagoromoInfo.cs",
-              "ToolTip": "C:\\Users\\moto1\\githubCode\\HagoromoCode\\Hagoromo\\Hagoromo\\HagoromoInfo.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\HagoromoInfo.cs",
               "RelativeToolTip": "HagoromoInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-09T13:47:27.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "W-Alldata.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\W-Alldata.cs",
+              "RelativeDocumentMoniker": "W-Alldata.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\W-Alldata.cs",
+              "RelativeToolTip": "W-Alldata.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T07:38:06.752Z"
             }
           ]
         }

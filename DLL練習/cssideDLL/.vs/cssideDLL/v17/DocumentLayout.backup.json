@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\cssideDLL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A1D4FA2-D15A-4408-8667-CC614BBD7038}|cssideDLL.csproj|c:\\users\\moto1\\github\\hagoromo\\dll\u7DF4\u7FD2\\cssidedll\\cssidedllcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A1D4FA2-D15A-4408-8667-CC614BBD7038}|cssideDLL.csproj|solutionrelative:cssidedllcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cssideDLLComponent.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\cssideDLL\\cssideDLLComponent.cs",
+              "RelativeDocumentMoniker": "cssideDLLComponent.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\cssideDLL\\cssideDLLComponent.cs",
+              "RelativeToolTip": "cssideDLLComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T15:01:06.521Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
