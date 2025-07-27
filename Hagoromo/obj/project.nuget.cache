@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ix5FPQ9YQzU=",
+  "dgSpecHash": "5dSQYyJaS9k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\Hagoromo.csproj",
+  "projectFilePath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\Hagoromo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moto1\\.nuget\\packages\\cloo.clsharp\\1.0.1\\cloo.clsharp.1.0.1.nupkg.sha512",
     "C:\\Users\\moto1\\.nuget\\packages\\grasshopper\\7.0.20314.3001\\grasshopper.7.0.20314.3001.nupkg.sha512",
@@ -19,5 +19,15 @@
     "C:\\Users\\moto1\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
     "C:\\Users\\moto1\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "パッケージの脆弱性データの取得中にエラーが発生しました: ソース https://api.nuget.org/v3/index.json のサービス インデックスを読み込めません。",
+      "projectPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\Hagoromo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\Hagoromo.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

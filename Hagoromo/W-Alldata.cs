@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Hagoromo
+namespace Hagoromo.DataStructure
 {
     public class Alldata
     {
@@ -10,8 +10,19 @@ namespace Hagoromo
         public object[,] SectionArray { get; set; }
         public object[,] NodeArray { get; set; }
         public object[,] ElementArray { get; set; }
+        public double[] GravityArray { get; set; }
 
-        public Alldata(object[,] propertyArray, object[,] sectionArray, object[,] nodeArray, object[,] elementArray)
+        // **デフォルトコンストラクタを追加**
+        public Alldata()
+        {
+            PropertyArray = new object[,] {};
+            SectionArray = new object[,] {};
+            NodeArray = new object[,] {};
+            ElementArray = new object[,] {};
+            GravityArray = new double[3];
+
+        }
+        public Alldata(object[,] propertyArray, object[,] sectionArray, object[,] nodeArray, object[,] elementArray, double[] gravityArray)
         {
             if (propertyArray == null)
                 throw new ArgumentNullException(nameof(propertyArray), "Property array cannot be null.");
@@ -21,11 +32,14 @@ namespace Hagoromo
                 throw new ArgumentNullException(nameof(nodeArray), "Node array cannot be null.");
             if (elementArray == null)
                 throw new ArgumentNullException(nameof(elementArray), "Element array cannot be null.");
+            if (gravityArray == null)
+                throw new ArgumentNullException(nameof(gravityArray), "Gravity array cannot be null.");
 
             PropertyArray = propertyArray;
             SectionArray = sectionArray;
             NodeArray = nodeArray;
             ElementArray = elementArray;
+            GravityArray = gravityArray;
         }
     }
 
@@ -44,7 +58,8 @@ namespace Hagoromo
                 (object[,])Value.PropertyArray.Clone(),
                 (object[,])Value.SectionArray.Clone(),
                 (object[,])Value.NodeArray.Clone(),
-                (object[,])Value.ElementArray.Clone()
+                (object[,])Value.ElementArray.Clone(),
+                (double[])Value.GravityArray.Clone()
             ));
         }
 

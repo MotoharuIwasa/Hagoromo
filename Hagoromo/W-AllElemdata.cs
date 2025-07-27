@@ -2,7 +2,7 @@
 using Rhino.Geometry;
 using System.Collections.Generic;
 
-namespace Hagoromo
+namespace Hagoromo.DataStructure
 {
     public class AllElemdata
     {

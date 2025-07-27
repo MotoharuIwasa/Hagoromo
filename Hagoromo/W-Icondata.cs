@@ -2,14 +2,14 @@
 using Rhino.Geometry;
 using System.Collections.Generic;
 
-namespace Hagoromo
+namespace Hagoromo.DataStructure
 {
     public class Icondata
     {
         public List<Point3d> Points { get; set; }
-        public List<int> Constraints { get; set; }
+        public List<bool> Constraints { get; set; }
 
-        public Icondata(List<Point3d> points, List<int> constraints)
+        public Icondata(List<Point3d> points, List<bool> constraints)
         {
             Points = points;
             Constraints = constraints;
@@ -26,7 +26,7 @@ namespace Hagoromo
         {
             return new GH_Icondata(new Icondata(
                 new List<Point3d>(Value.Points),
-                new List<int>(Value.Constraints)
+                new List<bool>(Value.Constraints)
             ));
         }
 

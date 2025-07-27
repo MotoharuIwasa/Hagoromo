@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Hagoromo
+namespace Hagoromo.DataStructure
 {
     public class AllPropdata
     {

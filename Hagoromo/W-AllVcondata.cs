@@ -1,7 +1,7 @@
 ﻿using Grasshopper.Kernel.Types;
 using System;
 
-namespace Hagoromo
+namespace Hagoromo.DataStructure
 {
     public class AllVcondata
     {
