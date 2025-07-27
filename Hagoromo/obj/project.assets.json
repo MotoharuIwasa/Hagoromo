@@ -792,11 +792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\Hagoromo.csproj",
+      "projectUniqueName": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\Hagoromo.csproj",
       "projectName": "Hagoromo",
-      "projectPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\Hagoromo.csproj",
+      "projectPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\Hagoromo.csproj",
       "packagesPath": "C:\\Users\\moto1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\obj\\",
+      "outputPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -843,7 +843,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net7.0": {
@@ -900,7 +900,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
       },
       "net7.0-windows7.0": {
         "targetAlias": "net7.0-windows",
@@ -948,7 +948,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
       },
       "net48": {
         "targetAlias": "net48",
@@ -963,8 +963,16 @@
             "version": "[7.0.20314.3001, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "パッケージの脆弱性データの取得中にエラーが発生しました: ソース https://api.nuget.org/v3/index.json のサービス インデックスを読み込めません。"
+    }
+  ]
 }

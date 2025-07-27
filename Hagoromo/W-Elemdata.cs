@@ -2,7 +2,7 @@
 using Rhino.Geometry;
 using System.Collections.Generic;
 
-namespace Hagoromo
+namespace Hagoromo.DataStructure
 {
     public class GH_Elemdata : GH_Goo<Elem.Elemdata>
     {
@@ -13,7 +13,7 @@ namespace Hagoromo
         {
             return new GH_Elemdata(new Elem.Elemdata(
                 Value.SectId,
-                new List<int>(Value.Constraint),
+                new List<bool>(Value.Constraint),
                 new List<double>(Value.CMQ),
                 new List<object>(Value.RotInfo),
                 new List<Line>(Value.Lines)

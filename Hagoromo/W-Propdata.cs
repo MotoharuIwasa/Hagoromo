@@ -1,7 +1,7 @@
 ﻿using System;
 using Grasshopper.Kernel.Types;
 
-namespace Hagoromo
+namespace Hagoromo.DataStructure
 {
     public class Propdata
     {

@@ -23,7 +23,11 @@
   </PropertyGroup>
   
   <ItemGroup>
+    <Compile Remove="C-Elem.cs" />
+    <Compile Remove="C-LinearStress.cs" />
+    <Compile Remove="C-test1.cs" />
     <Compile Remove="LinearBeam1.cs" />
+    <Compile Remove="MyComponent1.cs" />
   </ItemGroup>
   
   <ItemGroup>

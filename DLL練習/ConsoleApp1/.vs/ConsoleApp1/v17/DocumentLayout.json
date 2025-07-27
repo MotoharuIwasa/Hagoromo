@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|c:\\users\\moto1\\github\\hagoromo\\dll\u7DF4\u7FD2\\consoleapp1\\w-allsectdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|solutionrelative:w-allsectdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|c:\\users\\moto1\\github\\hagoromo\\dll\u7DF4\u7FD2\\consoleapp1\\w-allpropdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|solutionrelative:w-allpropdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|c:\\users\\moto1\\github\\hagoromo\\dll\u7DF4\u7FD2\\consoleapp1\\w-allicondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|solutionrelative:w-allicondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|c:\\users\\moto1\\github\\hagoromo\\dll\u7DF4\u7FD2\\consoleapp1\\w-allelemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|solutionrelative:w-allelemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|c:\\users\\moto1\\github\\hagoromo\\dll\u7DF4\u7FD2\\consoleapp1\\w-alldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|solutionrelative:w-alldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|c:\\users\\moto1\\github\\hagoromo\\dll\u7DF4\u7FD2\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF0E03A-A82C-4B9D-AA01-26FD5F5B380E}|ConsoleApp1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\Program2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "W-AllSectdata.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-AllSectdata.cs",
+              "RelativeDocumentMoniker": "W-AllSectdata.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-AllSectdata.cs*",
+              "RelativeToolTip": "W-AllSectdata.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:45:13.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "W-AllPropdata.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-AllPropdata.cs",
+              "RelativeDocumentMoniker": "W-AllPropdata.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-AllPropdata.cs*",
+              "RelativeToolTip": "W-AllPropdata.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:44:57.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "W-AllIcondata.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-AllIcondata.cs",
+              "RelativeDocumentMoniker": "W-AllIcondata.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-AllIcondata.cs*",
+              "RelativeToolTip": "W-AllIcondata.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:44:40.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "W-AllElemdata.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-AllElemdata.cs",
+              "RelativeDocumentMoniker": "W-AllElemdata.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-AllElemdata.cs*",
+              "RelativeToolTip": "W-AllElemdata.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:44:19.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "W-Alldata.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-Alldata.cs",
+              "RelativeDocumentMoniker": "W-Alldata.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\W-Alldata.cs*",
+              "RelativeToolTip": "W-Alldata.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:43:49.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program2.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\Program2.cs",
+              "RelativeDocumentMoniker": "Program2.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\Program2.cs",
+              "RelativeToolTip": "Program2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T11:45:49.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\DLL\u7DF4\u7FD2\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T07:22:18.338Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
