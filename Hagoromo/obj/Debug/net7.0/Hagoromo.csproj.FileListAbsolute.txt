@@ -116,3 +116,6 @@ C:\Users\moto1\github\hagoromo\Hagoromo - コピー - コピー\obj\Debug\net7.0
 C:\Users\moto1\github\hagoromo\Hagoromo - コピー - コピー\obj\Debug\net7.0\Hagoromo.pdb
 C:\Users\moto1\github\hagoromo\Hagoromo - コピー - コピー\obj\Debug\net7.0\Hagoromo.genruntimeconfig.cache
 C:\Users\moto1\github\hagoromo\Hagoromo - コピー - コピー\obj\Debug\net7.0\ref\Hagoromo.gha
+C:\Users\moto1\github\hagoromo\Hagoromo - コピー\obj\Debug\net7.0\Hagoromo.Properties.Resources.resources
+C:\Users\moto1\github\hagoromo\Hagoromo - コピー\obj\Debug\net7.0\Hagoromo.csproj.GenerateResource.cache
+C:\Users\moto1\github\hagoromo\Hagoromo - コピー\bin\Debug\net7.0\MathNet.Numerics.dll

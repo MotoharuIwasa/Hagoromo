@@ -26,6 +26,9 @@
     <Compile Remove="C-Elem.cs" />
     <Compile Remove="C-LinearStress.cs" />
     <Compile Remove="C-test1.cs" />
+    <Compile Remove="DevelopableMesh\C-MeshNet5.cs" />
+    <Compile Remove="GeometryTools\C-MeshTree.cs" />
+    <Compile Remove="GeometryTools\MyComponent1.cs" />
     <Compile Remove="LinearBeam1.cs" />
     <Compile Remove="MyComponent1.cs" />
   </ItemGroup>
@@ -34,6 +37,7 @@
     <PackageReference Include="Cloo.clSharp" Version="1.0.1" />
     <PackageReference Include="Grasshopper" Version="7.0.20314.3001" Condition="$(TargetFramework) == 'net48'" ExcludeAssets="runtime" />
     <PackageReference Include="Grasshopper" Version="8.0.23304.9001" Condition="!$(TargetFramework.StartsWith('net4'))" ExcludeAssets="runtime" />
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
   </ItemGroup>
   
   <!-- For Windows only builds -->
@@ -52,7 +56,9 @@
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" ExcludeAssets="runtime" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="新しいフォルダー\" />
+    <Reference Include="RhinoCommon">
+      <HintPath>..\..\..\..\..\Program Files\Rhino 8\System\RhinoCommon.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <Target Name="CopyPdbForMonoDebugging" AfterTargets="AfterBuild">
