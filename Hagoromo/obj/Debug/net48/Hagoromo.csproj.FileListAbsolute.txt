@@ -81,3 +81,6 @@ C:\Users\moto1\github\hagoromo\Hagoromo - コピー - コピー\obj\Debug\net48\
 C:\Users\moto1\github\hagoromo\Hagoromo - コピー - コピー\obj\Debug\net48\Hagoromo.csproj.Up2Date
 C:\Users\moto1\github\hagoromo\Hagoromo - コピー - コピー\obj\Debug\net48\Hagoromo.gha
 C:\Users\moto1\github\hagoromo\Hagoromo - コピー - コピー\obj\Debug\net48\Hagoromo.pdb
+C:\Users\moto1\github\hagoromo\Hagoromo - コピー\obj\Debug\net48\Hagoromo.Properties.Resources.resources
+C:\Users\moto1\github\hagoromo\Hagoromo - コピー\obj\Debug\net48\Hagoromo.csproj.GenerateResource.cache
+C:\Users\moto1\github\hagoromo\Hagoromo - コピー\bin\Debug\net48\MathNet.Numerics.dll

@@ -25,17 +25,20 @@ namespace Hagoromo
             pManager.AddBooleanParameter("Display Nodes", "D", "True to show node codes, false to show line codes", GH_ParamAccess.item, true);
         }
 
+        
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
-            pManager.AddPointParameter("Points", "P", "Non duplicate points", GH_ParamAccess.list);
-            pManager.AddIntegerParameter("Codes", "C", "List of start and end node indices for each line", GH_ParamAccess.tree);
+            //pManager.AddPointParameter("Points", "P", "Non duplicate points", GH_ParamAccess.list);
+            //pManager.AddIntegerParameter("Codes", "C", "List of start and end node indices for each line", GH_ParamAccess.tree);
         }
+        
 
         private List<Point3d> _nodes = new List<Point3d>();  // Store unique nodes
         private List<Line> _lines = new List<Line>();        // Store lines
         private double _size = 10.0;                         // Store text size
         private Grasshopper.DataTree<int> _lineCodes = new Grasshopper.DataTree<int>();
         private bool _displayNodes = true;                   // Boolean to toggle display
+        
 
         // Custom equality comparer for Point3d to handle duplicates
         public class Point3dEqualityComparer : IEqualityComparer<Point3d>
@@ -89,8 +92,8 @@ namespace Hagoromo
             }
 
             // Step 4: Output the results
-            DA.SetDataList(0, _nodes);
-            DA.SetDataTree(1, _lineCodes);
+            //DA.SetDataList(0, _nodes);
+            //DA.SetDataTree(1, _lineCodes);
         }
 
         public override void DrawViewportWires(IGH_PreviewArgs args)
