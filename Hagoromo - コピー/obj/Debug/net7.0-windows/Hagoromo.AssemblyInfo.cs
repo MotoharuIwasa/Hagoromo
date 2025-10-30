@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Description of Hagoromo")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8b40624ba9db8f8126afed5ebbd598564e1ff721")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+896c6152b347ad3d4cc34d2f949b7c37473039f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hagoromo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hagoromo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

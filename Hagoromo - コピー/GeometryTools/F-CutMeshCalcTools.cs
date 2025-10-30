@@ -62,6 +62,53 @@ namespace Hagoromo.GeometryTools
             return gaussian;
         }
 
+        /*
+        public static double[] PrincipalAbsMaxCurvature(CutMesh mesh)
+        {
+            double[] curvature = new double[mesh.Vertices.Count];
+            for (int i = 0;i < mesh.Vertices.Count; i++)
+            {
+                List<int> faces = mesh.GetFacesForVertex(i);
+            }
+        }
+
+        
+        public static List<Vector3d> FaceNormal(CutMesh mesh)
+        {
+            List<Vector3d> normals = new List<Vector3d>();
+            List<Point3d> centers = new List<Point3d>();
+            for (int i = 0; i <= mesh.Faces.GetLength(0); i++)
+            { 
+                centers.Add(FaceCenter(mesh,i));
+            }
+            Point3d center = new Point3d(centers.Average(p => p.X), centers.Average(p => p.Y), centers.Average(p => p.Z));
+
+
+            for (int i = 0; i <= mesh.Faces.GetLength(0); i++)
+            {
+                Point3d v0 = mesh.Vertices[mesh.Faces[i, 0]];
+                Point3d v1 = mesh.Vertices[mesh.Faces[i, 1]];
+                Point3d v2 = mesh.Vertices[mesh.Faces[i, 2]];
+                Vector3d vec1 = v1 - v0;
+                Vector3d vec2 = v2 - v0;
+                Vector3d normal = Vector3d.CrossProduct(vec1, vec2);
+                normal.Unitize();
+            }
+        }
+        */
+
+        public static Point3d FaceCenter(CutMesh mesh, int i)
+        {
+            Point3d v0 = mesh.Vertices[mesh.Faces[i, 0]];
+            Point3d v1 = mesh.Vertices[mesh.Faces[i, 1]];
+            Point3d v2 = mesh.Vertices[mesh.Faces[i, 2]];
+            Point3d center = (v0 + v1 + v2) / 3;
+            return center;
+        }
+
+
+
+
         //測地曲率のリスト、境界上のみ定義する。BoundaryVertIndicesの順
         public static double[] GeodesicCurvature(CutMesh mesh)
         {
@@ -79,6 +126,24 @@ namespace Hagoromo.GeometryTools
                 geodesic[i] = Math.PI - a;
             }
             return geodesic;
+        }
+
+        //ある点周りの角度をすべて足した値を返す
+        public static double[] AngleSum(CutMesh mesh)
+        {
+            List<List<double>> angles = InteriorAngles(mesh);
+            double[] angleSum = new double[mesh.Vertices.Count];
+            for (int i = 0; i < mesh.Vertices.Count; i++)
+            {
+                List<double> angle = angles[i];
+                double a = 0;
+                for (int j = 0; j < angle.Count; j++)
+                {
+                    a += angle[j];
+                }
+                angleSum[i] = a;
+            }
+            return angleSum;
         }
 
         public static int[][][] MakeInternalFaceID(CutMesh mesh)

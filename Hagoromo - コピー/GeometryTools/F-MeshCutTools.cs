@@ -251,7 +251,7 @@ namespace Hagoromo.GeometryTools
             return newMesh;
         }
 
-        //まだこの関数テストできてない
+        //CutMeshに追加のCutLineを加える
         public static CutMesh CutMeshWithEdgeIndices(CutMesh cutMesh, List<int> edgeIndices2)
         {
             /*
@@ -260,7 +260,6 @@ namespace Hagoromo.GeometryTools
             cutMesh.ReloadVertexToEdgesCache();
             cutMesh.ReloadVertexToFacesCache();
             */
-
             List<int> boundaryVertIndices = cutMesh.BoundaryVertIndices();
             List<int> fullSet = Enumerable.Range(0, cutMesh.Vertices.Count).ToList();
 
@@ -295,13 +294,14 @@ namespace Hagoromo.GeometryTools
             // edgeIndices に含まれるエッジの端点（頂点インデックス）を列挙
             var edgeVertIndices = vertToEdges.Keys.ToList();
 
+            /*
             // それぞれの頂点に対応するエッジ集合を取り出す
             foreach (int v in edgeVertIndices)
             {
                 List<int> connectedEdges = vertToEdges[v];
                 // ここで v を含む edgeIndices 内のエッジ番号一覧が取れる
             }
-
+            */
 
             //CutMesh originalMesh = cutMesh.Clone();
             CutMesh newMesh = cutMesh.Clone();
@@ -500,7 +500,123 @@ namespace Hagoromo.GeometryTools
             newMesh.ReloadVertexToEdgesCache();
             return newMesh;
         }
-        
+
+        //完全に分割されているCutMeshを検出して、複数のCutMeshに直す
+        public static List<CutMesh> SplitIntoConnectedComponents(CutMesh mesh)
+        {
+            int faceCount = mesh.Faces.GetLength(0);
+            int vertCount = mesh.Vertices.Count;
+            int edgeCount = mesh.Edges.Count;
+
+            // -----------------------------
+            // 1. Face adjacency を構築
+            // -----------------------------
+            // 各 face に隣接する face のリストを作る
+            List<int>[] faceAdj = new List<int>[faceCount];
+            for (int i = 0; i < faceCount; i++) faceAdj[i] = new List<int>(6);
+            Dictionary<int, List<int>> edgeToFacesCache = mesh.GetEdgeToFacesCache();
+            foreach (var kv in edgeToFacesCache)
+            {
+                var faces = kv.Value;
+                if (faces.Count == 2) // 両側にfaceがある場合のみ隣接
+                {
+                    int f0 = faces[0];
+                    int f1 = faces[1];
+                    faceAdj[f0].Add(f1);
+                    faceAdj[f1].Add(f0);
+                }
+            }
+
+            // -----------------------------
+            // 2. DFSで連結成分分解
+            // -----------------------------
+            bool[] visited = new bool[faceCount];
+            List<List<int>> components = new List<List<int>>();
+
+            for (int fi = 0; fi < faceCount; fi++)
+            {
+                if (visited[fi]) continue;
+
+                List<int> comp = new List<int>();
+                Stack<int> stack = new Stack<int>();
+                stack.Push(fi);
+
+                while (stack.Count > 0)
+                {
+                    int f = stack.Pop();
+                    if (visited[f]) continue;
+                    visited[f] = true;
+                    comp.Add(f);
+
+                    var nbs = faceAdj[f];
+                    for (int i = 0; i < nbs.Count; i++)
+                    {
+                        int nf = nbs[i];
+                        if (!visited[nf]) stack.Push(nf);
+                    }
+                }
+
+                components.Add(comp);
+            }
+
+            // -----------------------------
+            // 3. 各成分ごとに CutMesh を再構築
+            // -----------------------------
+            List<CutMesh> result = new List<CutMesh>(components.Count);
+
+            foreach (var compFaces in components)
+            {
+                // old → new index の対応表
+                Dictionary<int, int> vmap = new Dictionary<int, int>();
+                List<Point3d> newVerts = new List<Point3d>();
+                int[,] newFaces = new int[compFaces.Count, 3];
+
+                // 頂点抽出 + faceインデックス変換
+                for (int i = 0; i < compFaces.Count; i++)
+                {
+                    int f = compFaces[i];
+                    for (int j = 0; j < 3; j++)
+                    {
+                        int oldVi = mesh.Faces[f, j];
+                        if (!vmap.TryGetValue(oldVi, out int newVi))
+                        {
+                            newVi = newVerts.Count;
+                            vmap[oldVi] = newVi;
+                            newVerts.Add(mesh.Vertices[oldVi]);
+                        }
+                        newFaces[i, j] = newVi;
+                    }
+                }
+
+                // エッジ再構築（HashSetで重複排除）
+                HashSet<(int, int)> edgeSet = new HashSet<(int, int)>();
+                List<int[]> newEdges = new List<int[]>();
+
+                for (int i = 0; i < newFaces.GetLength(0); i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        int v0 = newFaces[i, j];
+                        int v1 = newFaces[i, (j + 1) % 3];
+                        var e = v0 < v1 ? (v0, v1) : (v1, v0);
+                        if (edgeSet.Add(e))
+                            newEdges.Add(new int[] { e.Item1, e.Item2 });
+                    }
+                }
+
+                // DuplicatedVertIndices （ここでは trivial に1頂点=1グループ）
+                List<List<int>> dVerts = new List<List<int>>(newVerts.Count);
+                for (int i = 0; i < newVerts.Count; i++)
+                    dVerts.Add(new List<int> { i });
+
+                result.Add(new CutMesh(newVerts, newFaces, newEdges, dVerts));
+            }
+
+            return result;
+        }
+
+
+
         //faceの閉ループを持つメッシュに切込みを入れて枝分かれありの一本の木になるようにしたときのconnectedFacesを出力
         public static int[][] MeshToOpenTree(Rhino.Geometry.Mesh mesh)
         {

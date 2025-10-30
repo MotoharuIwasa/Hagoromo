@@ -51,7 +51,7 @@ namespace Hagoromo.DevelopableMesh
                 // CutMesh へのキャストを試す
                 else if (goo.CastTo(out CutMesh cm))
                 {
-                    mesh = cm;
+                    mesh = cm.Clone();
                 }
             }
 

@@ -98,10 +98,15 @@ namespace Hagoromo.GeometryTools
             DuplicatedVertIndices = Enumerable.Range(0, Vertices.Count)
                               .Select(i => new List<int> { i })
                               .ToList();
+            
             VertexToEdgesCache = new Dictionary<int, List<int>>(BuildVertexEdgesCache());
             EdgeToFacesCache = new Dictionary<int, List<int>>(BuildEdgeFacesCache());
             VertexToFacesCache = new Dictionary<int, List<int>>(BuildVertexFacesCache());
-
+            /*
+            VertexToEdgesCache = BuildVertexEdgesCache();
+            EdgeToFacesCache = BuildEdgeFacesCache();
+            VertexToFacesCache = BuildVertexFacesCache();
+            */
         }
 
         public CutMesh Clone()
@@ -141,6 +146,11 @@ namespace Hagoromo.GeometryTools
         public void ReloadVertexToFacesCache()
         {
             VertexToFacesCache = BuildVertexFacesCache();
+        }
+
+        public Dictionary<int, List<int>> GetEdgeToFacesCache()
+        {
+            return new Dictionary<int, List<int>>(EdgeToFacesCache);
         }
 
 
@@ -216,7 +226,7 @@ namespace Hagoromo.GeometryTools
         {
 
             if (EdgeToFacesCache != null && EdgeToFacesCache.TryGetValue(edgeIndex, out var faces))
-                return faces;
+                return new List<int> (faces);
 
             return new List<int>();
         }
@@ -291,6 +301,7 @@ namespace Hagoromo.GeometryTools
             List<int> fullSetV = Enumerable.Range(0, Vertices.Count).ToList();
             List<int> internalVertIndices = fullSetV.Except(boundaryVertIndices).ToList();
             List<int> sortBoundaryIndices = new List<int>();
+            List<int> boundaryPart = new List<int>();
             int boundaryCurrentVertex = boundaryVertIndices[0];
             sortBoundaryIndices.Add(boundaryCurrentVertex);
             for (int i = 0; i < boundaryVertIndices.Count - 1; i++)
@@ -304,13 +315,31 @@ namespace Hagoromo.GeometryTools
                         twoVertices.AddRange(new List<int> { Edges[ei][0], Edges[ei][1] });
                     }
                 }
-                int nextVertex = (twoVertices.Where(x => !sortBoundaryIndices.Contains(x)).ToList())[0];
-
-                boundaryCurrentVertex = nextVertex;
+                int nextVertex = -1;
+                if (twoVertices.Any(x => !sortBoundaryIndices.Contains(x)))
+                {
+                    nextVertex = (twoVertices.Where(x => !sortBoundaryIndices.Contains(x)).ToList())[0];
+                }
+                else
+                {
+                    boundaryPart.Add(i);
+                    nextVertex = (boundaryVertIndices.Where(x => !sortBoundaryIndices.Contains(x)).ToList())[0];
+                }
                 sortBoundaryIndices.Add(nextVertex);
+                boundaryCurrentVertex = nextVertex;
 
             }
-
+            boundaryPart.Add(boundaryVertIndices.Count-1);
+            int countcount = 0;
+            /*
+            while (DuplicatedVertIndices.FirstOrDefault(inner => inner.Contains(sortBoundaryIndices[0])).ToArray().Length > 1 && countcount <sortBoundaryIndices.Count+1)
+            {
+                int first = sortBoundaryIndices[0];       // 先頭要素を取得
+                sortBoundaryIndices.RemoveAt(0);          // 先頭要素を削除
+                sortBoundaryIndices.Add(first);           // 末尾に追加
+                countcount++;
+            }
+            */
             /*
             List<Point3d> vertices = new List<Point3d>();
             int count = sortBoundaryIndices.Count;
@@ -345,8 +374,16 @@ namespace Hagoromo.GeometryTools
             List<int> internalEdgeIndices = fullSetE.Except(boundaryEdgeIndices).ToList();
             for (int i = 0; i < count; i++)
             {
-                //edges.Add(new int[] { sortBoundaryIndices[i], sortBoundaryIndices[(i + 1) % count] });
-                edges.Add(new int[] { i, (i + 1) % count });
+                if (boundaryPart.Contains(i))
+                {
+                    int indexofi = boundaryPart.IndexOf(i);
+                    if (indexofi == 0) { edges.Add(new int[] { i, 0 }); }
+                    else { edges.Add(new int[] { i, boundaryPart[indexofi - 1] + 1 }); }
+                }
+                else
+                {
+                    edges.Add(new int[] { i, (i + 1) % count });
+                }
             }
             foreach (int ei in internalEdgeIndices)
             {
@@ -381,7 +418,7 @@ namespace Hagoromo.GeometryTools
         public List<int> GetEdgesForVertex(int vertexIndex)
         {
             if (VertexToEdgesCache != null && VertexToEdgesCache.TryGetValue(vertexIndex, out var edges))
-                return edges;
+                return new List<int> (edges);
 
             return new List<int>();
         }
@@ -414,21 +451,57 @@ namespace Hagoromo.GeometryTools
         public List<int>GetFacesForVertex(int vertexIndex)
         {
             if (VertexToFacesCache != null && VertexToFacesCache.TryGetValue(vertexIndex, out var faces))
-                return faces;
+                return new List<int> (faces);
 
             return new List<int>();
         }
 
-        //EFdictionaryも更新必要。反時計回りの順である点を持つfaceたちを返す。境界上の点ならその端から順。
-        //この関数おかしい
+        //EFdictionaryも更新必要。反時計か時計回りの順である点を持つfaceたちを返す。境界上の点ならその端から順。
         public List<int> GetOrderedFacesForVertex(int vertIndex)
         {
-            Point3d v = Vertices[vertIndex];
-
+            //Point3d v = Vertices[vertIndex];
             List<int> connectedFaces = GetFacesForVertex(vertIndex);
+
+
+            List<int> connectedEdges = GetEdgesForVertex(vertIndex);
             if (connectedFaces == null || connectedFaces.Count == 0)
                 return new List<int>();
+            if (connectedFaces.Count == 1)
+            {
+                return connectedFaces;
+            }
+            List<int> order = new List<int>();
+            order.Add(connectedFaces[0]);
+            List<int> edgeList = new List<int>();
+            int nextFace = connectedFaces[0];
+            for (int i = 0; i < connectedFaces.Count - 1; i++)
+            {
+                List<int> TheEdges = (GetEdgesForFace(nextFace).ToList()).Intersect(connectedEdges).ToList();
+                if (edgeList.Contains(TheEdges[0])) { edgeList.Add(TheEdges[1]); TheEdges.RemoveAt(0); }
+                else { edgeList.Add(TheEdges[0]); TheEdges.RemoveAt(1); }
+                List<int> facesForEdge = GetFacesForEdge(TheEdges[0]);
+                if (facesForEdge.Count == 1)
+                {
+                    List<int> DoubleEdges = (GetEdgesForFace(connectedFaces[0]).ToList()).Intersect(connectedEdges).ToList();
+                    edgeList.Add(DoubleEdges[1]);
+                    facesForEdge = GetFacesForEdge(DoubleEdges[1]);
+                    facesForEdge.Remove(connectedFaces[0]);
+                    nextFace = facesForEdge[0];
+                    order.Reverse();
+                }
+                else
+                {
+                    facesForEdge.Remove(nextFace);
+                    nextFace = facesForEdge[0];
+                }
+                order.Add(nextFace);
+            }
+            return order;
 
+
+
+
+            /*
             // 頂点を基準にフェイス重心の角度を計算
             var faceAngles = new List<(int faceIndex, double angle)>();
             foreach (int fi in connectedFaces)
@@ -443,6 +516,7 @@ namespace Hagoromo.GeometryTools
             faceAngles.Sort((a, b) => a.angle.CompareTo(b.angle));
 
             List<int> order = faceAngles.Select(f => f.faceIndex).ToList();
+           
             List<int> boundaryVertIndices = BoundaryVertIndices();
             int count = order.Count;
             if (!(boundaryVertIndices.Contains(vertIndex)) || count <= 2)
@@ -450,25 +524,46 @@ namespace Hagoromo.GeometryTools
                 return order;
             }
 
+
             //点が境界上の時かつそこに3つ以上のフェイスがあるとき
             else
             {
                 List<int> newOrder = new List<int>();
+                List<int> boundaryIndices = BoundaryEdgeIndices();
                 for (int i = 0; i < count; i++)
                 {
-                    if (FaceHasBoundaryEdge(order[i]))
-                    //if (FaceHasBoundaryEdge(mesh, order[i]))
+                    List<int> threeEdges = GetEdgesForFace(order[i]).ToList();
+                    List<int> twoEdges = GetEdgesForFace(order[i]).ToList();
+                    for (int j = 0; j < 3; j++)
                     {
-                        if (!(FaceHasBoundaryEdge(order[(i + 1) % count])))
-                        //if (!(FaceHasBoundaryEdge(mesh, order[(i + 1) % count])))
+                        if (Edges[threeEdges[j]][0] != vertIndex && Edges[threeEdges[j]][1] != vertIndex)
+                        {
+                            twoEdges.RemoveAt(j);
+                        }
+                    }
+                    if (boundaryIndices.Contains(twoEdges[0]) || boundaryIndices.Contains(twoEdges[1]))
+                    {
+                        threeEdges = GetEdgesForFace(order[(i + 1) % count]).ToList();
+                        twoEdges = GetEdgesForFace(order[(i + 1) % count]).ToList();
+                        for (int j = 0; j < 3; j++)
+                        {
+                            if (Edges[threeEdges[j]][0] != vertIndex && Edges[threeEdges[j]][1] != vertIndex)
+                            {
+                                twoEdges.RemoveAt(j);
+                            }
+                        }
+                        if (!(boundaryIndices.Contains(twoEdges[0]) || boundaryIndices.Contains(twoEdges[1])))
                         {
                             newOrder = order.Skip(i).Concat(order.Take(i)).ToList();
                         }
                     }
                 }
                 return newOrder;
-            }
+                */
         }
+            
+        
+        
 
 
 
@@ -487,8 +582,18 @@ namespace Hagoromo.GeometryTools
             return -1;
         }
 
+        public int GetEdgeForEndPoints(int v0, int v1)
+        {
+            List<int> edges = GetEdgesForVertex(v0);
+            foreach( int edge in edges)
+            {
+                if (Edges[edge].Contains(v1)) return edge;
+            }
+            return -1;
+        }
+
         //faceの持つedgeのインデックスたち（３つ）を返す
-        int[] GetEdgesForFace(int faceIndex)
+        public int[] GetEdgesForFace(int faceIndex)
         {
             int[] edgeIndices = new int[3];
             edgeIndices[0] = FindEdgeIndex(Faces[faceIndex, 0], Faces[faceIndex, 1]);
@@ -496,6 +601,16 @@ namespace Hagoromo.GeometryTools
             edgeIndices[2] = FindEdgeIndex(Faces[faceIndex, 2], Faces[faceIndex, 0]);
             return edgeIndices;
         }
+
+        public int[] GetVerticesForFace(int faceIndex)
+        {
+            int[] vertIndices = new int[3];
+            vertIndices[0] = Faces[faceIndex, 0];
+            vertIndices[1] = Faces[faceIndex, 1];
+            vertIndices[2] = Faces[faceIndex, 2];
+            return vertIndices;
+        }
+
 
         //edgeインデックスのラインを返す
         public Line GetEdgeLine(int edgeIndex)
