@@ -317,8 +317,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMCAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T05:55:32.168Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -330,8 +329,7 @@
               "RelativeToolTip": "DevelopableMesh\\F-Curvature.cs",
               "ViewState": "AgIAAAQBAAAAAAAAAAAEwNwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T06:15:34.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T06:15:34.745Z"
             },
             {
               "$type": "Document",
@@ -343,8 +341,7 @@
               "RelativeToolTip": "GeometryTools\\C-MeshCutwithCutLines.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAvwCcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T01:34:26.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T01:34:26.278Z"
             },
             {
               "$type": "Document",
@@ -356,8 +353,7 @@
               "RelativeToolTip": "DevelopableMesh\\C-NetBFFLength.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAEwCwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:10:19.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T10:10:19.786Z"
             },
             {
               "$type": "Document",
@@ -382,8 +378,7 @@
               "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAUwG8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:01:27.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T04:01:27.391Z"
             },
             {
               "$type": "Document",
@@ -395,8 +390,7 @@
               "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh2.cs",
               "ViewState": "AgIAAKoAAAAAAAAAAAAUwLoAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T15:40:04.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-17T15:40:04.909Z"
             },
             {
               "$type": "Document",
@@ -408,8 +402,7 @@
               "RelativeToolTip": "DevelopableMesh\\C-DevelopMesh.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAUwEYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T06:15:08.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T06:15:08.432Z"
             },
             {
               "$type": "Document",
@@ -421,8 +414,7 @@
               "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh4.cs",
               "ViewState": "AgIAAKcAAAAAAAAAAAAQwLYAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T04:06:53.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T04:06:53.81Z"
             },
             {
               "$type": "Document",
