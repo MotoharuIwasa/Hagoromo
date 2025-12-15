@@ -46,7 +46,7 @@ namespace Hagoromo.GeometryTools
                 // CutMesh へのキャストを試す
                 else if (goo.CastTo(out CutMesh cm))
                 {
-                    cutMesh = cm;
+                    cutMesh = cm.Clone();
                 }
             }
 

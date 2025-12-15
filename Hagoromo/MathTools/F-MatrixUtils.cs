@@ -1,5 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Rhino;
+using Rhino.Geometry;
+using Rhino.Geometry.Collections;
+using Rhino.Render.ChangeQueue;
+
 
 namespace Hagoromo.MathTools
 {
@@ -100,6 +105,27 @@ namespace Hagoromo.MathTools
             {
                 result[i] = v[i] * scalar;
             }
+            return result;
+        }
+
+        //行列の各要素をスカラー倍
+        public static double[,] Multiply(double scalar, double[,] A)
+        {
+            double[,] result = new double[A.GetLength(0),A.GetLength(1)];
+            for (int i = 0; i < A.GetLength(0); i++)
+            {
+                for (int j = 0;j < A.GetLength(1); j++)
+                result[i,j] = A[i,j] * scalar;
+            }
+            return result;
+        }
+
+        public static Vector3d Multiply(double[,] A, Vector3d v)
+        {
+            Vector3d result = new Vector3d();
+            result.X = A[0, 0] * v.X + A[0, 1] * v.Y + A[0, 2] * v.Z;
+            result.Y = A[1, 0] * v.X + A[1, 1] * v.Y + A[1, 2] * v.Z;
+            result.Z = A[2, 0] * v.X + A[2, 1] * v.Y + A[2, 2] * v.Z;
             return result;
         }
 

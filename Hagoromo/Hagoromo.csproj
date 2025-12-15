@@ -26,9 +26,18 @@
     <Compile Remove="C-Elem.cs" />
     <Compile Remove="C-LinearStress.cs" />
     <Compile Remove="C-test1.cs" />
+    <Compile Remove="DevelopableMesh\C-CutChoiceOneSeed.cs" />
+    <Compile Remove="DevelopableMesh\C-DevelopMesh1.cs" />
+    <Compile Remove="DevelopableMesh\C-DevelopMesh2.cs" />
+    <Compile Remove="DevelopableMesh\C-GaussianCrv.cs" />
+    <Compile Remove="DevelopableMesh\C-MeshNet.cs" />
+    <Compile Remove="DevelopableMesh\C-MeshNet2.cs" />
+    <Compile Remove="DevelopableMesh\C-MeshNet3.cs" />
     <Compile Remove="DevelopableMesh\C-MeshNet5.cs" />
+    <Compile Remove="DevelopableMesh\C-MeshNet6.cs" />
     <Compile Remove="GeometryTools\C-MeshTree.cs" />
     <Compile Remove="GeometryTools\MyComponent1.cs" />
+    <Compile Remove="Heuristic\C-NSGAIIforCutMesh.cs" />
     <Compile Remove="LinearBeam1.cs" />
     <Compile Remove="MyComponent1.cs" />
   </ItemGroup>
@@ -56,6 +65,54 @@
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" ExcludeAssets="runtime" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="HEAL.Attic">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HEAL.Attic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Algorithms.NSGA2-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Algorithms.NSGA2-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Clients.Common-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Clients.Common-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Collections-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Collections-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Common-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Common-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Core-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Core-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Data-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Data-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Encodings.RealVectorEncoding-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Encodings.RealVectorEncoding-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Optimization-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Optimization-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.ParallelEngine-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.ParallelEngine-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Parameters-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Parameters-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.SequentialEngine-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.SequentialEngine-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="RhinoCommon">
       <HintPath>..\..\..\..\..\Program Files\Rhino 8\System\RhinoCommon.dll</HintPath>
     </Reference>
