@@ -1,6 +1,7 @@
 ﻿using Cloo.Bindings;
 using Grasshopper.Kernel;
 using Grasshopper.Kernel.Geometry.Delaunay;
+using Grasshopper.Kernel.Types;
 using Hagoromo.GeometryTools;
 using Hagoromo.MathTools;
 using HeuristicLab.Common;
@@ -14,7 +15,6 @@ using MathNet.Numerics.Optimization;
 using Rhino;
 using Rhino.Geometry;
 using Rhino.Geometry.Collections;
-using Rhino.Render.ChangeQueue;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -448,10 +448,9 @@ namespace Hagoromo.DevelopableMesh
 
 
         //---------------------------------------------------BFF------------------------------------------------------------
-        //等角写像による展開図作成(BFFという手法)
-        public static List<Point3d> NetBFF(CutMesh mesh)
+        //等角写像による展開図作成(BFFという手法)、cutMeshはsortした状態で入れておく
+        public static List<Point3d> NetBFF(CutMesh cutMesh)
         {
-            CutMesh cutMesh = mesh.Sort();
             int boundaryVertCount = cutMesh.BoundaryVertIndices().Count;
             //List<List<double>> angles = CutMeshCalcTools.InteriorAngles(cutMesh);
             double[,] A = BuildLaplace(cutMesh);
@@ -1585,5 +1584,327 @@ namespace Hagoromo.DevelopableMesh
             }
             return (J_data, consValue);
         }
-}
+
+        public static CutMesh CutMeshNetLBFGS(CutMesh cutMesh, double w0, double w1)
+        {
+            
+            CutMesh newMesh = cutMesh.Clone();
+            List<Line> lines = new List<Line>();
+            double[] initialLength = EdgeLength(cutMesh);
+            Vector3d[] normals = FaceNormal(cutMesh);
+            double[] initialAbsArea = new double[normals.Length];
+            for (int i = 0; i < normals.Length; i++)
+            {
+                initialAbsArea[i] = normals[i].Length;
+            }
+
+            Mesh mesh = cutMesh.ConvertToMesh2();
+            Polyline[] nakedEdges = mesh.GetNakedEdges();
+            Polyline outline = nakedEdges[0];
+            double[][] newTopoVertices2D = NetTools.TutteTopoVertices(mesh, outline);
+            Point3d[] newTopoVertices = PtCrvTools.Convert2Dto3D(newTopoVertices2D);
+
+            //更新後のメッシュを作成
+            Rhino.Geometry.Mesh tutteMesh = MeshDataTools.MakeMesh(mesh, newTopoVertices);
+            for (int i = 0; i < newMesh.DuplicatedVertIndices.Count; i++)
+            {
+                List<int> vertGroup = newMesh.DuplicatedVertIndices[i];
+                foreach (int vert in vertGroup)
+                {
+                    newMesh.Vertices[vert] = tutteMesh.Vertices[i];
+                }
+            }
+
+            //newMesh.Vertices = NetTools.NetBFF2(cutMesh,outerBoundaryVertCount);
+            newMesh.DuplicatedVertIndices = Enumerable.Range(0, cutMesh.Vertices.Count)
+                              .Select(i => new List<int> { i })
+                              .ToList();
+
+            //----------------------------------------------以下newMeshに対して長さ最適化かつ裏返り防止LBFGS-----------------------------
+            int vertCount = newMesh.Vertices.Count;
+            List<Point3d> points = newMesh.Vertices;
+            int variableCount = vertCount * 2;
+            var system = new SimulationSystem(variableCount);
+
+            // 初期座標のセット
+            for (int i = 0; i < vertCount; i++)
+            {
+                system.X[2 * i] = points[i].X;
+                system.X[2 * i + 1] = points[i].Y;
+            }
+
+            // データの準備
+            List<int[]> edges = newMesh.Edges;
+            int[,] facesWithOrder = FacesWithOrder(newMesh);
+
+            // --- 項目の追加 ---
+
+            //----------------------------------等式の制約条件はこのように加える-----------------------------------------
+            // 1. 長さ保存 (重み: 1.0)
+            system.AddEnergy(new EdgeLengthEnergy2D(w0, edges, initialLength));
+
+            //system.AddEnergy(new AreaEnergy2D(w[1],facesWithOrder,initialAbsArea));
+
+
+            //----------------------------不等式の制約条件はこのように加える-----------------------------------------------
+
+            var areaConstraint = new AreaBarrier(w1, facesWithOrder);
+
+            // 同じものを「エネルギー」としても「制約」としても登録する
+            system.AddEnergy(areaConstraint);
+            system.AddConstraint(areaConstraint);
+            //----------------------------不等式の制約条件はこの二つセットで加える 終-----------------------------------------------
+
+            system.Step(10000);
+
+            /*
+            //ほとんど長さ保存ができているのでこの状態でさらに長さ最適化を行って微調整を行う
+            var system2 = new SimulationSystem(variableCount);
+            for (int i = 0; i < variableCount; i++)
+            {
+                system2.X[i] = system.X[i];
+            }
+            system2.AddEnergy(new EdgeLengthEnergy2D(1, edges, initialLength));
+            system2.Step();
+            */
+
+            //求めたxをnewMeshのverticesに適用する
+            for (int i = 0; i < vertCount; i++)
+            {
+                newMesh.Vertices[i] = new Point3d(system.X[2 * i], system.X[2 * i + 1], 0);
+            }
+
+            return newMesh;
+        }
+
+        public static CutMesh CutMeshNetLBFGS2(CutMesh cutMesh2, double w0, double w1)
+        {
+            CutMesh cutMesh = cutMesh2.Clone();
+            cutMesh = cutMesh.Sort();
+            cutMesh.DuplicatedVertIndices = cutMesh.DuplicatedVertIndices.Select(list => list.OrderBy(x => x).ToList()).OrderBy(list => list[0]).ToList();
+            double[] initialLength = EdgeLength(cutMesh);
+
+            List<int> boundary = cutMesh.BoundaryEdgeIndices();
+            int boundaryCount = boundary.Count;
+            List<List<int>> boundaryGroup = new List<List<int>>();
+            List<int> group = new List<int> { 0 };
+            for (int i = 0; i < boundaryCount - 1; i++)
+            {
+                HashSet<int> visited = new HashSet<int>();
+                visited.Add(cutMesh.Edges[boundary[i]][0]);
+                visited.Add(cutMesh.Edges[boundary[i]][1]);
+                visited.Add(cutMesh.Edges[boundary[i + 1]][0]);
+                visited.Add(cutMesh.Edges[boundary[i + 1]][1]);
+                if (visited.Count <= 3) { group.Add(i + 1); }
+                else { boundaryGroup.Add(group); group = new List<int> { i + 1 }; }
+            }
+            boundaryGroup.Add(group);
+
+            //外部境界線は考えなくてよい。ここでは一番エッジ本数が長いものを外部境界線としている
+            List<List<int>> boundaryVertsGroup = new List<List<int>>();
+            List<double> area = new List<double>();
+
+            for (int i = 0; i < boundaryGroup.Count; i++)
+            {
+                var loop = boundaryGroup[i];
+                var verts = cutMesh.EdgesToVerts(loop);
+                boundaryVertsGroup.Add(verts);
+
+                // 面積計算
+                var pointsList = verts.Select(v => cutMesh.Vertices[v]).ToList();
+                var polyline = new Polyline(pointsList);
+                var mesh = Mesh.CreateFromClosedPolyline(polyline);
+                if (mesh == null) { area.Add(0); }
+                else { area.Add(Math.Abs(AreaMassProperties.Compute(mesh).Area)); };
+            }
+
+            // 最大面積のインデックス
+            int maxIndex = area.IndexOf(area.Max());
+
+            // そのループだけ削除
+            boundaryVertsGroup.RemoveAt(maxIndex);
+
+
+            int[] vertOrderInDup = cutMesh.VertOrderInDup();
+            List<List<int>> holes = new List<List<int>>();
+            foreach (List<int> loop in boundaryVertsGroup)
+            {
+                List<bool> isDup = new List<bool>();
+                List<int> loopClone = new List<int>(loop);
+                foreach (int vert in loop)
+                {
+                    int dupIndex = vertOrderInDup[vert];
+                    int dupVertCount = cutMesh.DuplicatedVertIndices[dupIndex].Count;
+                    if (dupVertCount == 1) { isDup.Add(false); }
+                    else { isDup.Add(true); }
+                }
+                if (isDup.All(x => x == false))
+                {
+                    holes.Add(loop);
+                    continue;
+                }
+
+                int j = 0;
+                List<bool> isDupClone = new List<bool>(isDup);
+                while (j < isDup.Count && !isDup[j])
+                {
+                    loopClone.RemoveAt(0);
+                    loopClone.Add(loop[j]);
+                    isDupClone.RemoveAt(0);
+                    isDupClone.Add(false);
+                    j++;
+                }
+                isDupClone.Add(true);
+                loopClone.Add(loopClone[0]);
+
+                var result = new List<List<int>>();
+                int? start = null;
+                for (int i = 0; i < isDupClone.Count; i++)
+                {
+                    if (isDupClone[i])
+                    {
+                        if (start != null)
+                        {
+                            // start と i の間の false のインデックスを追加
+                            List<int> block = Enumerable.Range(start.Value, i - start.Value).ToList();
+                            List<int> vertBlock = new List<int>();
+                            if (block.Count > 3) { foreach (int blockIndex in block) { vertBlock.Add(loopClone[blockIndex]); } holes.Add(vertBlock); }
+                        }
+                        start = i; // 新しい t の位置を記録
+                    }
+                }
+            }
+
+            //holeを塞ぐために付け足すものをリストアップ
+            List<Point3d> addVerts = new List<Point3d>();
+            List<int[]> addEdges = new List<int[]>();
+            List<int[]> addFaces = new List<int[]>();
+            int lastVertIndex = cutMesh.Vertices.Count - 1;
+            foreach (List<int> hole in holes)
+            {
+                Point3d center = new Point3d();
+                lastVertIndex += 1;
+                for (int i = 0; i < hole.Count; i++)
+                {
+                    int vert = hole[i];
+                    center += cutMesh.Vertices[vert];
+                    addEdges.Add(new int[] { vert, lastVertIndex });
+                    if (i == hole.Count - 1) 
+                    {
+                        if (vertOrderInDup[vert] != vertOrderInDup[hole[0]]) { addFaces.Add(new int[] { vert, hole[0], lastVertIndex }); continue; }
+                        else { continue; } 
+                    }
+                    addFaces.Add(new int[] { vert, hole[i + 1], lastVertIndex });
+                }
+                center /= hole.Count;
+                addVerts.Add(center);
+                cutMesh.DuplicatedVertIndices.Add(new List<int> { lastVertIndex });
+            }
+            cutMesh.Vertices.AddRange(addVerts);
+            cutMesh.Edges.AddRange(addEdges);
+            int originalCount = cutMesh.Faces.GetLength(0);
+            int addCount = addFaces.Count;
+
+            int[,] faces = new int[originalCount + addCount, 3];
+
+            // 元の faces をコピー
+            for (int i = 0; i < originalCount; i++)
+            {
+                faces[i, 0] = cutMesh.Faces[i, 0];
+                faces[i, 1] = cutMesh.Faces[i, 1];
+                faces[i, 2] = cutMesh.Faces[i, 2];
+            }
+
+            // addFaces をコピー
+            for (int i = 0; i < addCount; i++)
+            {
+                faces[originalCount + i, 0] = addFaces[i][0];
+                faces[originalCount + i, 1] = addFaces[i][1];
+                faces[originalCount + i, 2] = addFaces[i][2];
+            }
+            cutMesh.Faces = faces;
+            cutMesh.ReloadVertexToEdgesCache();
+            cutMesh.ReloadEdgeToFacesCache();
+            cutMesh.ReloadVertexToFacesCache();
+
+            vertOrderInDup = cutMesh.VertOrderInDup();
+            CutMesh newMesh = cutMesh.ConvertToNoSlitCutMesh();
+            newMesh.Vertices = NetBFF(newMesh);
+            for (int i = 0; i < cutMesh.Vertices.Count; i++)
+            {
+                cutMesh.Vertices[i] = newMesh.Vertices[vertOrderInDup[i]];
+            }
+
+            cutMesh.Vertices.RemoveRange(cutMesh.Vertices.Count - addVerts.Count, addVerts.Count);
+            cutMesh.Edges.RemoveRange(cutMesh.Edges.Count - addEdges.Count, addEdges.Count);
+            faces = new int[originalCount, 3];
+            for (int i = 0; i < originalCount; i++)
+            {
+                faces[i, 0] = cutMesh.Faces[i, 0];
+                faces[i, 1] = cutMesh.Faces[i, 1];
+                faces[i, 2] = cutMesh.Faces[i, 2];
+            }
+            cutMesh.Faces = faces;
+            cutMesh.ReloadVertexToEdgesCache();
+            cutMesh.ReloadEdgeToFacesCache();
+            cutMesh.ReloadVertexToFacesCache();
+
+            //----------------------------------------------以下newMeshに対して長さ最適化かつ裏返り防止LBFGS-----------------------------
+            int vertCount = cutMesh.Vertices.Count;
+            List<Point3d> points = cutMesh.Vertices;
+            int variableCount = vertCount * 2;
+            var system = new SimulationSystem(variableCount);
+
+            // 初期座標のセット
+            for (int i = 0; i < vertCount; i++)
+            {
+                system.X[2 * i] = points[i].X;
+                system.X[2 * i + 1] = points[i].Y;
+            }
+
+            // データの準備
+            List<int[]> edges = cutMesh.Edges;
+            int[,] facesWithOrder = FacesWithOrder(cutMesh);
+
+            // --- 項目の追加 ---
+
+            //----------------------------------等式の制約条件はこのように加える-----------------------------------------
+            // 1. 長さ保存 (重み: 1.0)
+            system.AddEnergy(new EdgeLengthEnergy2D(w0, edges, initialLength));
+
+            //system.AddEnergy(new AreaEnergy2D(w[1],facesWithOrder,initialAbsArea));
+
+
+            //----------------------------不等式の制約条件はこのように加える-----------------------------------------------
+
+            var areaConstraint = new AreaBarrier(w1, facesWithOrder);
+
+            // 同じものを「エネルギー」としても「制約」としても登録する
+            system.AddEnergy(areaConstraint);
+            system.AddConstraint(areaConstraint);
+            //----------------------------不等式の制約条件はこの二つセットで加える 終-----------------------------------------------
+
+            system.Step(200);
+
+            /*
+            //ほとんど長さ保存ができているのでこの状態でさらに長さ最適化を行って微調整を行う
+            var system2 = new SimulationSystem(variableCount);
+            for (int i = 0; i < variableCount; i++)
+            {
+                system2.X[i] = system.X[i];
+            }
+            system2.AddEnergy(new EdgeLengthEnergy2D(1, edges, initialLength));
+            system2.Step();
+            */
+
+            //求めたxをnewMeshのverticesに適用する
+            for (int i = 0; i < vertCount; i++)
+            {
+                cutMesh.Vertices[i] = new Point3d(system.X[2 * i], system.X[2 * i + 1], 0);
+            }
+
+            cutMesh.DuplicatedVertIndices = Enumerable.Range(0, cutMesh.Vertices.Count).Select(i => new List<int> { i }).ToList();
+            return cutMesh;
+        }
+    }
 }

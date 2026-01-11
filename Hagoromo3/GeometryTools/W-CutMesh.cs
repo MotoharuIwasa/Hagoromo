@@ -254,6 +254,19 @@ namespace Hagoromo.GeometryTools
             return boundaryVertices.ToList();
         }
 
+        //polyEdgesからそれを通る点群のインデックスを返す
+        public List<int> EdgesToVerts(List<int> edges)
+        {
+            HashSet<int> vertices = new HashSet<int>();
+            foreach (int ei in edges)
+            {
+                vertices.Add(Edges[ei][0]);
+                vertices.Add(Edges[ei][1]);
+            }
+            return vertices.ToList();
+        }
+
+
         //内側の点のインデックス
         /*
             InternalVertIndicesは以下のように入手できる         
@@ -707,6 +720,39 @@ namespace Hagoromo.GeometryTools
             mesh.Normals.ComputeNormals();
             mesh.Compact();
             return mesh;
+        }
+
+        public CutMesh ConvertToNoSlitCutMesh()
+        {
+            List<Point3d> vertices = new List<Point3d>();
+            List<List<int>> dup = new List<List<int>>();
+            int[] vertOrderInDup = VertOrderInDup();
+            int[,] faces = new int[Faces.GetLength(0),3];
+
+            for (int i = 0; i < DuplicatedVertIndices.Count; i++)
+            {
+                vertices.Add(Vertices[DuplicatedVertIndices[i][0]]);
+                dup.Add( new List<int> { i } );
+            }
+            for (int i = 0; i < Faces.GetLength(0); i++)
+            {
+                faces[i, 0] = vertOrderInDup[Faces[i, 0]];
+                faces[i, 1] = vertOrderInDup[Faces[i, 1]];
+                faces[i, 2] = vertOrderInDup[Faces[i, 2]];
+            }
+            List<int[]> edges = new List<int[]>();
+            for (int i = 0; i < Edges.Count; i++)
+            {
+                int e0 = vertOrderInDup[Edges[i][0]];
+                int e1 = vertOrderInDup[Edges[i][1]];
+                bool flag = true;
+                foreach (int[] edge in edges)
+                {
+                    if ((edge[0] == e0 && edge[1] == e1) || (edge[1] == e0 && edge[0] == e1)) { flag = false; }
+                }
+                if (flag) { edges.Add(new int[] {e0,e1}); }
+            }
+            return new CutMesh(vertices, faces, edges, dup);
         }
     }
 

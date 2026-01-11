@@ -46,6 +46,8 @@ namespace Hagoromo.DevelopableMesh
             pManager.AddNumberParameter("edgeW", "edgeW", "edge energy weight", GH_ParamAccess.item, 1);
             pManager.AddNumberParameter("smoothW", "smoothW", "smoothing weight", GH_ParamAccess.item, 1);
             pManager.AddNumberParameter("devW", "devW", "developable energy weight", GH_ParamAccess.item, 1);
+            pManager.AddNumberParameter("positionW", "posW", "position weight", GH_ParamAccess.item, 1);
+            pManager.AddNumberParameter("lenRangeW", "lenRangeW", "length range weight", GH_ParamAccess.item, 1);
         }
 
         /// <summary>
@@ -104,6 +106,10 @@ namespace Hagoromo.DevelopableMesh
             DA.GetData(10, ref smoothW);
             double devW = 1;
             DA.GetData(11, ref devW);
+            double posW = 1;
+            DA.GetData(12, ref posW);
+            double lenRangeW = 1;
+            DA.GetData(13, ref lenRangeW);
 
             List<Curve> outerCrvs = new List<Curve>();
             DA.GetDataList(6, outerCrvs);
@@ -172,7 +178,7 @@ namespace Hagoromo.DevelopableMesh
             }
 
             //w1～w6の設定
-            double[] w = new double[] { 100.0, 100.0, 1.0, 100.0, 1.0, 100.0 };
+            double[] w = new double[] { 100.0, 100.0, 100, 100.0, 100.0, 100.0 };
             //double[] w = new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 };
             //--------------------------------------------------データの準備 終-------------------------------------------------
 
@@ -180,16 +186,20 @@ namespace Hagoromo.DevelopableMesh
             //最適化するものの箱を準備
             var optimizer = new GaussNewtonOptimizer(variableCount);
 
+            List<Point3d> dupInitialPosition = new List<Point3d>();
             // 初期座標のセット
             for (int i = 0; i < dupVertCount; i++)
             {
                 Point3d point = cutMesh.Vertices[duplicatedVertIndices[i][0]];
+                dupInitialPosition.Add(point);
                 optimizer.X[3 * i] = point.X;
                 optimizer.X[3 * i + 1] = point.Y;
                 optimizer.X[3 * i + 2] = point.Z;
             }
 
             // ------------------------等式制約の追加-------------------------------------------
+
+            optimizer.AddTerm(new MinMaxLengthCGLS3D(lenRangeW, cullDupEdges, vertOrderInDup, initialLength, unMoveSet));
 
             optimizer.AddTerm(new EdgeLengthCGLS3D(edgeW, cullDupEdges, vertOrderInDup, initialLength, unMoveSet));
 
@@ -198,7 +208,7 @@ namespace Hagoromo.DevelopableMesh
 
             optimizer.AddTerm(new SmoothingCGLS(smoothW, dupConnectedVertIndices, unMoveSetSmooth));
 
-
+            optimizer.AddTerm(new VertMoveCGLS(posW, dupInitialPosition, unMoveSet));
             // ----不等式制約の追加（別に等式と特段変わりはない、その制約のクラス内で条件満たすかどうかでの処理を書くかどうかの違い）---
 
             //optimizer.AddTerm(new MinLengthTerm(100.0, cullDupEdges, 15, vertOrderInDup));

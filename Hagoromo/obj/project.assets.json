@@ -856,11 +856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\Hagoromo.csproj",
+      "projectUniqueName": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\Hagoromo.csproj",
       "projectName": "Hagoromo",
-      "projectPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\Hagoromo.csproj",
+      "projectPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\Hagoromo.csproj",
       "packagesPath": "C:\\Users\\moto1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - コピー\\obj\\",
+      "outputPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

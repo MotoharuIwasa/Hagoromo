@@ -1,0 +1,429 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Hagoromo/1.0": {
+        "dependencies": {
+          "Cloo.clSharp": "1.0.1",
+          "Grasshopper": "8.0.23304.9001",
+          "MathNet.Numerics": "5.0.0",
+          "HEAL.Attic": "1.2.0.0",
+          "HeuristicLab.Algorithms.NSGA2-3.3": "3.3.0.0",
+          "HeuristicLab.Clients.Common-3.3": "3.3.0.0",
+          "HeuristicLab.Collections-3.3": "3.3.0.0",
+          "HeuristicLab.Common-3.3": "3.3.0.0",
+          "HeuristicLab.Core-3.3": "3.3.0.0",
+          "HeuristicLab.Data-3.3": "3.3.0.0",
+          "HeuristicLab.Encodings.RealVectorEncoding-3.3": "3.3.0.0",
+          "HeuristicLab.Optimization-3.3": "3.3.0.0",
+          "HeuristicLab.ParallelEngine-3.3": "3.3.0.0",
+          "HeuristicLab.Parameters-3.3": "3.3.0.0",
+          "HeuristicLab.Problems.Programmable-3.3": "3.3.0.0",
+          "HeuristicLab.SequentialEngine-3.3": "3.3.0.0"
+        },
+        "runtime": {
+          "Hagoromo.gha": {}
+        }
+      },
+      "Cloo.clSharp/1.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Cloo.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "Grasshopper/8.0.23304.9001": {
+        "dependencies": {
+          "RhinoCommon": "8.0.23304.9001"
+        }
+      },
+      "MathNet.Numerics/5.0.0": {
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "RhinoCommon/8.0.23304.9001": {},
+      "HEAL.Attic/1.2.0.0": {
+        "runtime": {
+          "HEAL.Attic.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "HeuristicLab.Algorithms.NSGA2-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Algorithms.NSGA2-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Clients.Common-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Clients.Common-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Collections-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Collections-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Common-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Common-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Core-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Core-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Data-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Data-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Encodings.RealVectorEncoding-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Encodings.RealVectorEncoding-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Optimization-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Optimization-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.ParallelEngine-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.ParallelEngine-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Parameters-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Parameters-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Problems.Programmable-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Problems.Programmable-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.SequentialEngine-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.SequentialEngine-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "Google.Protobuf/3.6.1.0": {
+        "runtime": {
+          "Google.Protobuf.dll": {
+            "assemblyVersion": "3.6.1.0",
+            "fileVersion": "3.6.1.0"
+          }
+        }
+      },
+      "HeuristicLab.Analysis-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Analysis-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Random-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Random-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Optimization.Operators-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Optimization.Operators-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Operators-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Operators-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Selection-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Selection-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.PluginInfrastructure-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.PluginInfrastructure-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Common.Resources-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Common.Resources-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Persistence-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Persistence-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Scripting-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Scripting-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "ALGLIB-3.7.0/3.7.0.0": {
+        "runtime": {
+          "ALGLIB-3.7.0.dll": {
+            "assemblyVersion": "3.7.0.0",
+            "fileVersion": "3.7.0.0"
+          }
+        }
+      },
+      "HeuristicLab.Operators.Programmable-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Operators.Programmable-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      },
+      "HeuristicLab.Tracing-3.3/3.3.0.0": {
+        "runtime": {
+          "HeuristicLab.Tracing-3.3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.16.17186"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hagoromo/1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cloo.clSharp/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IobfnbM8xi2HjBN3lKYhomwwsp5Nk8MKNxT6Aag7A/0u/wuN6/ZwNh4AGMKZPutNwpa8UZfOJEoYWDB9Pr1jJg==",
+      "path": "cloo.clsharp/1.0.1",
+      "hashPath": "cloo.clsharp.1.0.1.nupkg.sha512"
+    },
+    "Grasshopper/8.0.23304.9001": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L1Cse6nAxryzcZ7jsu3WzBiG9BYtgYsaNbRV+p55N+THKTFGmXx1PdBbiWtuxK9kB4jyuLVpeV8XBiYlSGA1Vw==",
+      "path": "grasshopper/8.0.23304.9001",
+      "hashPath": "grasshopper.8.0.23304.9001.nupkg.sha512"
+    },
+    "MathNet.Numerics/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pg1W2VwaEQMAiTpGK840hZgzavnqjlCMTVSbtVCXVyT+7AX4mc1o89SPv4TBlAjhgCOo9c1Y+jZ5m3ti2YgGgA==",
+      "path": "mathnet.numerics/5.0.0",
+      "hashPath": "mathnet.numerics.5.0.0.nupkg.sha512"
+    },
+    "RhinoCommon/8.0.23304.9001": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hWuqXjcj/eb1/z8+bml4Bav/8Oug2p6t0mAVf37GhX9sP+M1aYNO9FappqeN8oefcIBkLBmAzr46DYNhTxFAGQ==",
+      "path": "rhinocommon/8.0.23304.9001",
+      "hashPath": "rhinocommon.8.0.23304.9001.nupkg.sha512"
+    },
+    "HEAL.Attic/1.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Algorithms.NSGA2-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Clients.Common-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Collections-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Common-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Core-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Data-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Encodings.RealVectorEncoding-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Optimization-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.ParallelEngine-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Parameters-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Problems.Programmable-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.SequentialEngine-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf/3.6.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Analysis-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Random-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Optimization.Operators-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Operators-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Selection-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.PluginInfrastructure-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Common.Resources-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Persistence-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Scripting-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ALGLIB-3.7.0/3.7.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Operators.Programmable-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeuristicLab.Tracing-3.3/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-developcgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-developcgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\f-cutchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-cutchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\f-cutmeshcgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-cutmeshcgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\f-cutmeshcalctools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\f-cutmeshcalctools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\f-cutmeshlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-cutmeshlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\w-cutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\w-cutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-developlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-developlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-cutbytear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-cutbytear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\mathtools\\f-cgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,8 +23,88 @@
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-developable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\f-net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-developcgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-developcgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\f-meshcuttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\f-meshcuttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netlbfgs2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netlbfgs2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netbff2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netbff2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\f-cutmeshlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-cutmeshlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\mathtools\\f-lbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:mathtools\\f-lbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\w-cutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\w-cutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\f-cutmeshcgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-cutmeshcgls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-developlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-developlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-checkobjective.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-checkobjective.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-checksignedarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-checksignedarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netlbfgs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netbff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netbff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-edgepushpull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-edgepushpull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\f-ruledmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-ruledmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\c-meshcutwithcutlines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-meshcutwithcutlines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\c-meshgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-meshgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netbffcgnrlength.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netbffcgnrlength.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-tuttemesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-tuttemesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\c-cutmeshedges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-cutmeshedges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-developcutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,36 +115,16 @@
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-categorycheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\f-cutmeshcalctools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\f-cutmeshcalctools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-developcutmesh2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-developcutmesh2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-checkobjective.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-checkobjective.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-developcutmesh3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-developcutmesh3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-tuttemesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-tuttemesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\c-mbridgecutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-mbridgecutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-checksignedarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-checksignedarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\c-cutmeshedges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-cutmeshedges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-cutchoiceprinciplenoloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,14 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-checkruling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-checkruling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netbff2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netbff2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netbff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netbff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\f-meshcalctools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,10 +149,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-principlecurvature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-principlecurvature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netbffcgnrlength.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\c-netbffcgnrlength.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-netbffcglength.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -147,14 +183,6 @@
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-getmaintree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\c-meshcutwithcutlines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-meshcutwithcutlines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\c-meshgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-meshgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\c-randomcutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-randomcutmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -171,10 +199,6 @@
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\c-vertexnormal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\f-meshcuttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\f-meshcuttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\geometrytools\\f-meshdatatools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:geometrytools\\f-meshdatatools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -189,10 +213,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\datatools\\f-datatools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:datatools\\f-datatools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\f-ruledmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|solutionrelative:developablemesh\\f-ruledmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28170981-0D2B-4BE4-AB1C-8702DF589250}|Hagoromo.csproj|c:\\users\\moto1\\github\\hagoromo\\hagoromo3\\developablemesh\\c-gaussiancrv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -367,199 +387,228 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "W-CutMesh.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\W-CutMesh.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\W-CutMesh.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\W-CutMesh.cs",
-              "RelativeToolTip": "GeometryTools\\W-CutMesh.cs",
-              "ViewState": "AgIAAOkAAAAAAAAAAAAYwPQAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "C-EdgePushPull.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-EdgePushPull.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-EdgePushPull.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-EdgePushPull.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-EdgePushPull.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAUwHIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T13:06:54.058Z",
+              "WhenOpened": "2025-12-15T14:35:47.016Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "F-Net.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-Net.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\F-Net.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-Net.cs",
+              "RelativeToolTip": "DevelopableMesh\\F-Net.cs",
+              "ViewState": "AgIAAEYHAAAAAAAAAAAYwF4HAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:46:45.9Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "C-NetLBFGS2.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetLBFGS2.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetLBFGS2.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetLBFGS2.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-NetLBFGS2.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwEsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T01:23:11.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "C-DevelopCGLS.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCGLS.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCGLS.cs",
               "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCGLS.cs",
               "RelativeToolTip": "DevelopableMesh\\C-DevelopCGLS.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAkwJYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAAUwHMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T11:54:54.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "F-CutMeshCGLS.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutMeshCGLS.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\F-CutMeshCGLS.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutMeshCGLS.cs",
-              "RelativeToolTip": "DevelopableMesh\\F-CutMeshCGLS.cs",
-              "ViewState": "AgIAAJcCAAAAAAAAAAAAAJkCAAA+AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "C-CutByTear.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CutByTear.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-CutByTear.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CutByTear.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-CutByTear.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAADwv2QAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T11:30:45.196Z",
+              "WhenOpened": "2025-12-16T14:19:40.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "F-CutMeshLBFGS.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutMeshLBFGS.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\F-CutMeshLBFGS.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutMeshLBFGS.cs",
-              "RelativeToolTip": "DevelopableMesh\\F-CutMeshLBFGS.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAApwFQAAAApAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "F-CutChoice.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutChoice.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\F-CutChoice.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutChoice.cs",
+              "RelativeToolTip": "DevelopableMesh\\F-CutChoice.cs",
+              "ViewState": "AgIAAEYCAAAAAAAAAAAQwMICAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T03:29:16.693Z",
+              "WhenOpened": "2025-12-15T12:16:35.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "F-Developable.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-Developable.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\F-Developable.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-Developable.cs",
-              "RelativeToolTip": "DevelopableMesh\\F-Developable.cs",
-              "ViewState": "AgIAAA8aAAAAAAAAAIAxwNIaAAB8AAAAAAAAAA==",
+              "Title": "F-MeshCutTools.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshCutTools.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\F-MeshCutTools.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshCutTools.cs",
+              "RelativeToolTip": "GeometryTools\\F-MeshCutTools.cs",
+              "ViewState": "AgIAAIIBAAAAAAAAAAAkwP4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T11:32:18.92Z",
+              "WhenOpened": "2025-08-27T05:57:36.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "F-LBFGS.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-LBFGS.cs",
-              "RelativeDocumentMoniker": "MathTools\\F-LBFGS.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-LBFGS.cs",
-              "RelativeToolTip": "MathTools\\F-LBFGS.cs",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAAAG0BAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "F-CutMeshCalcTools.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-CutMeshCalcTools.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\F-CutMeshCalcTools.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-CutMeshCalcTools.cs",
+              "RelativeToolTip": "GeometryTools\\F-CutMeshCalcTools.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwJ8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T01:47:42.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "C-DevelopLBFGS.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopLBFGS.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopLBFGS.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopLBFGS.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-DevelopLBFGS.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAqwLEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T06:24:56.009Z",
+              "WhenOpened": "2025-12-05T14:22:37.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "C-NetLBFGS.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetLBFGS.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetLBFGS.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetLBFGS.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-NetLBFGS.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAowKQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:51:23.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "F-CGLS.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-CGLS.cs",
               "RelativeDocumentMoniker": "MathTools\\F-CGLS.cs",
               "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-CGLS.cs",
               "RelativeToolTip": "MathTools\\F-CGLS.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAkwLQAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAIwLQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T13:30:36.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "c-categoryCheck.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\c-categoryCheck.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\c-categoryCheck.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\c-categoryCheck.cs",
-              "RelativeToolTip": "DevelopableMesh\\c-categoryCheck.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAMwEcAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "F-Developable.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-Developable.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\F-Developable.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-Developable.cs",
+              "RelativeToolTip": "DevelopableMesh\\F-Developable.cs",
+              "ViewState": "AgIAAPUaAAAAAAAAAAAUwB4bAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T07:09:44.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "F-CutMeshCalcTools.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-CutMeshCalcTools.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\F-CutMeshCalcTools.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-CutMeshCalcTools.cs",
-              "RelativeToolTip": "GeometryTools\\F-CutMeshCalcTools.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:22:37.998Z"
+              "WhenOpened": "2025-11-28T11:32:18.92Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "C-DevelopCutMesh.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCutMesh.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAHEAAAAcAAAAAAAAAA==",
+              "Title": "C-NetBFF2.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFF2.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetBFF2.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFF2.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-NetBFF2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:01:27.391Z"
+              "WhenOpened": "2025-12-06T14:20:01.355Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "C-DevelopCutMesh2.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh2.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCutMesh2.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh2.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "F-CutMeshLBFGS.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutMeshLBFGS.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\F-CutMeshLBFGS.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutMeshLBFGS.cs",
+              "RelativeToolTip": "DevelopableMesh\\F-CutMeshLBFGS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUEAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T12:11:29.793Z"
+              "WhenOpened": "2025-12-08T03:29:16.693Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
+              "Title": "F-LBFGS.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-LBFGS.cs",
+              "RelativeDocumentMoniker": "MathTools\\F-LBFGS.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-LBFGS.cs",
+              "RelativeToolTip": "MathTools\\F-LBFGS.cs",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAuwG8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T01:47:42.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "C-CheckObjective.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CheckObjective.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-CheckObjective.cs",
               "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CheckObjective.cs",
               "RelativeToolTip": "DevelopableMesh\\C-CheckObjective.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAADwv8MAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAADwv8QAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T06:17:32.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "C-DevelopCutMesh3.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh3.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCutMesh3.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh3.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh3.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAUwFoAAABKAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "F-CutMeshCGLS.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutMeshCGLS.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\F-CutMeshCGLS.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-CutMeshCGLS.cs",
+              "RelativeToolTip": "DevelopableMesh\\F-CutMeshCGLS.cs",
+              "ViewState": "AgIAAGMBAAAAAAAAAAAAwAwDAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T03:33:02.62Z"
+              "WhenOpened": "2025-12-14T11:30:45.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
+              "Title": "W-CutMesh.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\W-CutMesh.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\W-CutMesh.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\W-CutMesh.cs",
+              "RelativeToolTip": "GeometryTools\\W-CutMesh.cs",
+              "ViewState": "AgIAAEMDAAAAAAAAAAAAAIsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:06:54.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "C-DevelopLBFGS.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopLBFGS.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopLBFGS.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopLBFGS.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-DevelopLBFGS.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAUwK4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T06:24:56.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "c-CheckSignedArea.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\c-CheckSignedArea.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\c-CheckSignedArea.cs",
@@ -571,19 +620,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "C-MbridgeCutMesh.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MbridgeCutMesh.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\C-MbridgeCutMesh.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MbridgeCutMesh.cs",
-              "RelativeToolTip": "GeometryTools\\C-MbridgeCutMesh.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCwAAABHAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "C-NetLBFGS.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetLBFGS.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetLBFGS.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetLBFGS.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-NetLBFGS.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowE0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:25:31.244Z"
+              "WhenOpened": "2025-12-06T12:51:23.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
+              "Title": "C-NetBFF.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFF.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetBFF.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFF.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-NetBFF.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA4wEEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T12:32:51.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "F-RuledMesh.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-RuledMesh.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\F-RuledMesh.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-RuledMesh.cs",
+              "RelativeToolTip": "DevelopableMesh\\F-RuledMesh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4BAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T12:08:11.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "C-TutteMesh.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-TutteMesh.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-TutteMesh.cs",
@@ -596,234 +669,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "C-NetBFF.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFF.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetBFF.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFF.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-NetBFF.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwD8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T12:32:51.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "C-NetBFF2.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFF2.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetBFF2.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFF2.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-NetBFF2.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwEIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T14:20:01.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "C-CheckRuling.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CheckRuling.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-CheckRuling.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CheckRuling.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-CheckRuling.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAIwK8AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T07:40:45.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "C-CutMeshEdges.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-CutMeshEdges.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\C-CutMeshEdges.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-CutMeshEdges.cs",
-              "RelativeToolTip": "GeometryTools\\C-CutMeshEdges.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAywCEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T13:45:01.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "C-CutChoicePrincipleNoLoop.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CutChoicePrincipleNoLoop.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-CutChoicePrincipleNoLoop.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CutChoicePrincipleNoLoop.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-CutChoicePrincipleNoLoop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T08:39:39.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "F-MeshCalcTools.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshCalcTools.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\F-MeshCalcTools.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshCalcTools.cs",
-              "RelativeToolTip": "GeometryTools\\F-MeshCalcTools.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAzwMcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T14:55:28.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "C-DevelopCutMesh4.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh4.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCutMesh4.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh4.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh4.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T04:06:53.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "C-PrincipleCurvature.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-PrincipleCurvature.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-PrincipleCurvature.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-PrincipleCurvature.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-PrincipleCurvature.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAUwDoAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T07:08:22.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "F-MatrixUtils.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-MatrixUtils.cs",
-              "RelativeDocumentMoniker": "MathTools\\F-MatrixUtils.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-MatrixUtils.cs",
-              "RelativeToolTip": "MathTools\\F-MatrixUtils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T05:08:31.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "C-NetBFFCGNRLength.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFFCGNRLength.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetBFFCGNRLength.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFFCGNRLength.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-NetBFFCGNRLength.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAUwEEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T14:33:49.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "C-NetBFFCGLength.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFFCGLength.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetBFFCGLength.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFFCGLength.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-NetBFFCGLength.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwD8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:10:19.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "C-DevelopMesh.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopMesh.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopMesh.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopMesh.cs",
-              "RelativeToolTip": "DevelopableMesh\\C-DevelopMesh.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwAsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T06:15:08.432Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "c-Check2.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\c-Check2.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\c-Check2.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\c-Check2.cs",
-              "RelativeToolTip": "GeometryTools\\c-Check2.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwEUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T13:13:29.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "C-CutMeshGCurvature.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-CutMeshGCurvature.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\C-CutMeshGCurvature.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-CutMeshGCurvature.cs",
-              "RelativeToolTip": "GeometryTools\\C-CutMeshGCurvature.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwDcAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T10:24:06.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "C-DeconstructCutMesh.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-DeconstructCutMesh.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\C-DeconstructCutMesh.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-DeconstructCutMesh.cs",
-              "RelativeToolTip": "GeometryTools\\C-DeconstructCutMesh.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:31:35.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "C-DivideCutMesh.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-DivideCutMesh.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\C-DivideCutMesh.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-DivideCutMesh.cs",
-              "RelativeToolTip": "GeometryTools\\C-DivideCutMesh.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAUwBQAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T14:24:13.285Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "C-FaceNormal.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-FaceNormal.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\C-FaceNormal.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-FaceNormal.cs",
-              "RelativeToolTip": "GeometryTools\\C-FaceNormal.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAUwCYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T09:12:23.199Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "C-GetMainTree.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-GetMainTree.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\C-GetMainTree.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-GetMainTree.cs",
-              "RelativeToolTip": "GeometryTools\\C-GetMainTree.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAwAgAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T02:57:00.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "C-MeshCutwithCutLines.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MeshCutwithCutLines.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\C-MeshCutwithCutLines.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MeshCutwithCutLines.cs",
-              "RelativeToolTip": "GeometryTools\\C-MeshCutwithCutLines.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwDUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T01:34:26.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
               "Title": "C-MeshGraph.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MeshGraph.cs",
               "RelativeDocumentMoniker": "GeometryTools\\C-MeshGraph.cs",
@@ -835,7 +680,271 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "C-MeshCutwithCutLines.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MeshCutwithCutLines.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\C-MeshCutwithCutLines.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MeshCutwithCutLines.cs",
+              "RelativeToolTip": "GeometryTools\\C-MeshCutwithCutLines.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAUwDcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T01:34:26.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "C-CutMeshEdges.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-CutMeshEdges.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\C-CutMeshEdges.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-CutMeshEdges.cs",
+              "RelativeToolTip": "GeometryTools\\C-CutMeshEdges.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAIwCEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T13:45:01.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "C-NetBFFCGNRLength.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFFCGNRLength.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetBFFCGNRLength.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFFCGNRLength.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-NetBFFCGNRLength.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwEEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T14:33:49.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "c-categoryCheck.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\c-categoryCheck.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\c-categoryCheck.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\c-categoryCheck.cs",
+              "RelativeToolTip": "DevelopableMesh\\c-categoryCheck.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAMwEcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T07:09:44.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "C-DevelopCutMesh.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCutMesh.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAHEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T04:01:27.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "C-DevelopCutMesh2.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh2.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCutMesh2.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh2.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T12:11:29.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "C-DevelopCutMesh3.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh3.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCutMesh3.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh3.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh3.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwFoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T03:33:02.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "C-MbridgeCutMesh.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MbridgeCutMesh.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\C-MbridgeCutMesh.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-MbridgeCutMesh.cs",
+              "RelativeToolTip": "GeometryTools\\C-MbridgeCutMesh.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T04:25:31.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "C-CheckRuling.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CheckRuling.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-CheckRuling.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CheckRuling.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-CheckRuling.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAIwK8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:40:45.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "C-CutChoicePrincipleNoLoop.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CutChoicePrincipleNoLoop.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-CutChoicePrincipleNoLoop.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CutChoicePrincipleNoLoop.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-CutChoicePrincipleNoLoop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:39:39.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "F-MeshCalcTools.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshCalcTools.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\F-MeshCalcTools.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshCalcTools.cs",
+              "RelativeToolTip": "GeometryTools\\F-MeshCalcTools.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAzwMcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T14:55:28.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "C-DevelopCutMesh4.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh4.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopCutMesh4.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopCutMesh4.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-DevelopCutMesh4.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T04:06:53.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "C-PrincipleCurvature.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-PrincipleCurvature.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-PrincipleCurvature.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-PrincipleCurvature.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-PrincipleCurvature.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAUwDoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T07:08:22.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "F-MatrixUtils.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-MatrixUtils.cs",
+              "RelativeDocumentMoniker": "MathTools\\F-MatrixUtils.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MathTools\\F-MatrixUtils.cs",
+              "RelativeToolTip": "MathTools\\F-MatrixUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T05:08:31.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "C-NetBFFCGLength.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFFCGLength.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-NetBFFCGLength.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-NetBFFCGLength.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-NetBFFCGLength.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwD8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T10:10:19.786Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 38,
+              "Title": "C-DevelopMesh.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopMesh.cs",
+              "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopMesh.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopMesh.cs",
+              "RelativeToolTip": "DevelopableMesh\\C-DevelopMesh.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T06:15:08.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "c-Check2.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\c-Check2.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\c-Check2.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\c-Check2.cs",
+              "RelativeToolTip": "GeometryTools\\c-Check2.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwEUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T13:13:29.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "C-CutMeshGCurvature.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-CutMeshGCurvature.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\C-CutMeshGCurvature.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-CutMeshGCurvature.cs",
+              "RelativeToolTip": "GeometryTools\\C-CutMeshGCurvature.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwDcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T10:24:06.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "C-DeconstructCutMesh.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-DeconstructCutMesh.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\C-DeconstructCutMesh.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-DeconstructCutMesh.cs",
+              "RelativeToolTip": "GeometryTools\\C-DeconstructCutMesh.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T04:31:35.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "C-DivideCutMesh.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-DivideCutMesh.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\C-DivideCutMesh.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-DivideCutMesh.cs",
+              "RelativeToolTip": "GeometryTools\\C-DivideCutMesh.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAUwBQAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:24:13.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "C-FaceNormal.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-FaceNormal.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\C-FaceNormal.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-FaceNormal.cs",
+              "RelativeToolTip": "GeometryTools\\C-FaceNormal.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAUwCYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T09:12:23.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "C-GetMainTree.cs",
+              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-GetMainTree.cs",
+              "RelativeDocumentMoniker": "GeometryTools\\C-GetMainTree.cs",
+              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-GetMainTree.cs",
+              "RelativeToolTip": "GeometryTools\\C-GetMainTree.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T02:57:00.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
               "Title": "C-RandomCutMesh.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-RandomCutMesh.cs",
               "RelativeDocumentMoniker": "GeometryTools\\C-RandomCutMesh.cs",
@@ -847,7 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
               "Title": "C-RotateCutMesh.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-RotateCutMesh.cs",
               "RelativeDocumentMoniker": "GeometryTools\\C-RotateCutMesh.cs",
@@ -859,7 +968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 47,
               "Title": "C-SortCutMesh.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-SortCutMesh.cs",
               "RelativeDocumentMoniker": "GeometryTools\\C-SortCutMesh.cs",
@@ -871,7 +980,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 48,
               "Title": "C-VertexNormal.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\C-VertexNormal.cs",
               "RelativeDocumentMoniker": "GeometryTools\\C-VertexNormal.cs",
@@ -883,19 +992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "F-MeshCutTools.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshCutTools.cs",
-              "RelativeDocumentMoniker": "GeometryTools\\F-MeshCutTools.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshCutTools.cs",
-              "RelativeToolTip": "GeometryTools\\F-MeshCutTools.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwPgBAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T05:57:36.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "F-MeshDataTools.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\F-MeshDataTools.cs",
               "RelativeDocumentMoniker": "GeometryTools\\F-MeshDataTools.cs",
@@ -907,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "c-Check.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\c-Check.cs",
               "RelativeDocumentMoniker": "GeometryTools\\c-Check.cs",
@@ -919,7 +1016,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "F-DataTools.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataTools\\F-DataTools.cs",
               "RelativeDocumentMoniker": "DataTools\\F-DataTools.cs",
@@ -931,7 +1028,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "1Codes.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\1Codes.cs",
               "RelativeDocumentMoniker": "1Codes.cs",
@@ -943,19 +1040,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "F-RuledMesh.cs",
-              "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-RuledMesh.cs",
-              "RelativeDocumentMoniker": "DevelopableMesh\\F-RuledMesh.cs",
-              "ToolTip": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\F-RuledMesh.cs",
-              "RelativeToolTip": "DevelopableMesh\\F-RuledMesh.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4BAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T12:08:11.582Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
               "Title": "C-GaussianCrv.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-GaussianCrv.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-GaussianCrv.cs",
@@ -967,7 +1052,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "C-CutChoiceOneSeed.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-CutChoiceOneSeed.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-CutChoiceOneSeed.cs",
@@ -979,7 +1064,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "C-MeshNet3.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-MeshNet3.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-MeshNet3.cs",
@@ -991,7 +1076,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "Hagoromo.csproj",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\Hagoromo.csproj",
               "RelativeDocumentMoniker": "Hagoromo.csproj",
@@ -1003,7 +1088,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "C-DevelopMesh1.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopMesh1.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopMesh1.cs",
@@ -1015,7 +1100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "C-DevelopMesh2.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-DevelopMesh2.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-DevelopMesh2.cs",
@@ -1027,7 +1112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "C-MeshNet.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-MeshNet.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-MeshNet.cs",
@@ -1039,7 +1124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 60,
               "Title": "C-MeshNet2.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-MeshNet2.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-MeshNet2.cs",
@@ -1051,7 +1136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "C-MeshNet6.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-MeshNet6.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-MeshNet6.cs",
@@ -1063,7 +1148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "C-NSGAIIsample.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\Heuristic\\C-NSGAIIsample.cs",
               "RelativeDocumentMoniker": "Heuristic\\C-NSGAIIsample.cs",
@@ -1075,7 +1160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 64,
               "Title": "ShowInput.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\Display\\ShowInput.cs",
               "RelativeDocumentMoniker": "Display\\ShowInput.cs",
@@ -1087,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 63,
               "Title": "C-NSGAIIforCutMesh.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\Heuristic\\C-NSGAIIforCutMesh.cs",
               "RelativeDocumentMoniker": "Heuristic\\C-NSGAIIforCutMesh.cs",
@@ -1099,7 +1184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 65,
               "Title": "C-Prop.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-Prop.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-Prop.cs",
@@ -1111,7 +1196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 67,
               "Title": "C-Elem2.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-Elem2.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-Elem2.cs",
@@ -1123,7 +1208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 66,
               "Title": "C-AllProp.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-AllProp.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-AllProp.cs",
@@ -1135,7 +1220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 68,
               "Title": "C-PointsAndElements.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\Display\\C-PointsAndElements.cs",
               "RelativeDocumentMoniker": "Display\\C-PointsAndElements.cs",
@@ -1147,7 +1232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 69,
               "Title": "MyComponent1.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\GeometryTools\\MyComponent1.cs",
               "RelativeDocumentMoniker": "GeometryTools\\MyComponent1.cs",
@@ -1159,7 +1244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 71,
               "Title": "c-LcheckBeamElemK.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\checkL\\c-LcheckBeamElemK.cs",
               "RelativeDocumentMoniker": "checkL\\c-LcheckBeamElemK.cs",
@@ -1171,7 +1256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 70,
               "Title": "c-LcheckKff.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\checkL\\c-LcheckKff.cs",
               "RelativeDocumentMoniker": "checkL\\c-LcheckKff.cs",
@@ -1183,7 +1268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 72,
               "Title": "C-MeshNet5.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DevelopableMesh\\C-MeshNet5.cs",
               "RelativeDocumentMoniker": "DevelopableMesh\\C-MeshNet5.cs",
@@ -1195,7 +1280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 73,
               "Title": "C-AllVCon.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-AllVCon.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-AllVCon.cs",
@@ -1207,7 +1292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 74,
               "Title": "C-CombineAlldata.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-CombineAlldata.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-CombineAlldata.cs",
@@ -1219,7 +1304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 75,
               "Title": "C-AdjustUnits.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-AdjustUnits.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-AdjustUnits.cs",
@@ -1231,7 +1316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 77,
               "Title": "W-Elemdata.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\W-Elemdata.cs",
               "RelativeDocumentMoniker": "DataStructure\\W-Elemdata.cs",
@@ -1243,7 +1328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 76,
               "Title": "W-Alldata.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\W-Alldata.cs",
               "RelativeDocumentMoniker": "DataStructure\\W-Alldata.cs",
@@ -1255,7 +1340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 78,
               "Title": "optimization.c",
               "DocumentMoniker": "C:\\D\\Cdocs\\Hogan\\optimization.c",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\D\\Cdocs\\Hogan\\optimization.c",
@@ -1267,7 +1352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 79,
               "Title": "c-LcheckBeamGlobalK.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\checkL\\c-LcheckBeamGlobalK.cs",
               "RelativeDocumentMoniker": "checkL\\c-LcheckBeamGlobalK.cs",
@@ -1279,7 +1364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 80,
               "Title": "C-AllBeamElem.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-AllBeamElem.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-AllBeamElem.cs",
@@ -1291,7 +1376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 81,
               "Title": "MyComponent1.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\MyComponent1.cs",
               "RelativeDocumentMoniker": "MyComponent1.cs",
@@ -1303,7 +1388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 82,
               "Title": "C-Elem.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\C-Elem.cs",
               "RelativeDocumentMoniker": "C-Elem.cs",
@@ -1315,7 +1400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 83,
               "Title": "C-LinearStress.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\C-LinearStress.cs",
               "RelativeDocumentMoniker": "C-LinearStress.cs",
@@ -1327,7 +1412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 84,
               "Title": "C-LinearAnalysis.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\SolverL\\C-LinearAnalysis.cs",
               "RelativeDocumentMoniker": "SolverL\\C-LinearAnalysis.cs",
@@ -1339,7 +1424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 85,
               "Title": "c-LcheckUf.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\checkL\\c-LcheckUf.cs",
               "RelativeDocumentMoniker": "checkL\\c-LcheckUf.cs",
@@ -1351,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 86,
               "Title": "C-VCon.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-VCon.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-VCon.cs",
@@ -1363,7 +1448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 87,
               "Title": "C-Sect.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-Sect.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-Sect.cs",
@@ -1375,7 +1460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 88,
               "Title": "C-ICon2.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-ICon2.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-ICon2.cs",
@@ -1387,7 +1472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 89,
               "Title": "C-AllICon.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-AllICon.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-AllICon.cs",
@@ -1399,7 +1484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 90,
               "Title": "C-AllBeamSect.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\C-AllBeamSect.cs",
               "RelativeDocumentMoniker": "DataStructure\\C-AllBeamSect.cs",
@@ -1411,7 +1496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 91,
               "Title": "HagoromoInfo.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\0HagoromoInfo\\HagoromoInfo.cs",
               "RelativeDocumentMoniker": "0HagoromoInfo\\HagoromoInfo.cs",
@@ -1423,7 +1508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 92,
               "Title": "W-fAlldata.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo3\\DataStructure\\W-fAlldata.cs",
               "RelativeDocumentMoniker": "DataStructure\\W-fAlldata.cs",
@@ -1435,7 +1520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 93,
               "Title": "C-test1.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\github\\hagoromo\\Hagoromo - \u30B3\u30D4\u30FC\\C-test1.cs",
               "RelativeDocumentMoniker": "..\\Hagoromo - \u30B3\u30D4\u30FC\\C-test1.cs",
@@ -1446,7 +1531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 94,
               "Title": "ASSEMBLE.cs",
               "DocumentMoniker": "C:\\Users\\moto1\\AppData\\Local\\Temp\\.vsdbgsrc\\842a47bed776410500e785262df9838fef02450d43a0ea449e59cde34669a8b2\\ASSEMBLE.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\842a47bed776410500e785262df9838fef02450d43a0ea449e59cde34669a8b2\\ASSEMBLE.cs",

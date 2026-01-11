@@ -276,7 +276,7 @@ namespace Hagoromo.DevelopableMesh
             for (int i = 0; i < count; i++)
             {
                 nextp[i] = -nextJacobi[i] + betaUpper * p[i] / betaLower;
-                newTopoVertices[internalVertexIndices[i]] += 1 * nextp[i];
+                newTopoVertices[internalVertexIndices[i]] += 0.1 * nextp[i];
                 p[i] = nextp[i];
                 Jacobi[i] = nextJacobi[i];
             }

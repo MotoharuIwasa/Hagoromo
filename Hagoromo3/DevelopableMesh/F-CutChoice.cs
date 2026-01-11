@@ -136,7 +136,7 @@ namespace Hagoromo.DevelopableMesh
             List<int>[] cutEdgeIndices = new List<int>[seedCount];
             List<int>[] cutVertices = new List<int>[seedCount];
             double[] totalLength = new double[seedCount];
-            int[,] endPoints = new int[seedCount,2];
+            int[,] endPoints = new int[seedCount, 2];
 
             for (int i = 0; i < seedCount; i++)
             {
@@ -167,8 +167,8 @@ namespace Hagoromo.DevelopableMesh
                 {
                     if (mergedSeed[i]) { continue; }
 
-                    List<int> possibleVertices1 = mesh.GetVerticesForVertex(endPoints[i,0]);
-                    List<int> possibleVertices2 = mesh.GetVerticesForVertex(endPoints[i,1]);
+                    List<int> possibleVertices1 = mesh.GetVerticesForVertex(endPoints[i, 0]);
+                    List<int> possibleVertices2 = mesh.GetVerticesForVertex(endPoints[i, 1]);
                     possibleVertices1.RemoveAll(v => cutVertices[i].Contains(v));
                     possibleVertices2.RemoveAll(v => cutVertices[i].Contains(v));
                     int vertex1 = sortedIndices.FirstOrDefault(index => possibleVertices1.Contains(index));
@@ -178,15 +178,15 @@ namespace Hagoromo.DevelopableMesh
                     if (sortedIndices.IndexOf(vertex1) <= sortedIndices.IndexOf(vertex2))
                     {
                         newVertex = vertex1;
-                        newEdge = mesh.GetEdgeForEndPoints(endPoints[i,0], vertex1);
-                        endPoints[i,0] = vertex1;
+                        newEdge = mesh.GetEdgeForEndPoints(endPoints[i, 0], vertex1);
+                        endPoints[i, 0] = vertex1;
                         cutVertices[i].Add(vertex1);
                     }
                     else
                     {
                         newVertex = vertex2;
-                        newEdge = mesh.GetEdgeForEndPoints(endPoints[i,1], vertex2);
-                        endPoints[i,1] = vertex2;
+                        newEdge = mesh.GetEdgeForEndPoints(endPoints[i, 1], vertex2);
+                        endPoints[i, 1] = vertex2;
                         cutVertices[i].Add(vertex2);
                     }
                     cutEdgeIndices[i].Add(newEdge);
@@ -581,5 +581,156 @@ namespace Hagoromo.DevelopableMesh
             return path;
         }
 
+        //h1 - H1がpositiveかどうか、initialHeightはfaceの順で格納
+        public static (List<Point3d> vecStart, List<List<bool>> positive, List<List<Vector3d>> edgeVec) EdgeVecList(List<List<double>> initialHeight, CutMesh mesh2d)
+        {
+            List<Point3d> vecStart = new List<Point3d>();
+            List<List<bool>> positive = new List<List<bool>>();
+            List<List<Vector3d>> edgeVec = new List<List<Vector3d>>();
+            for (int i = 0; i < mesh2d.Edges.Count; i++)
+            {
+                List<int> faces = mesh2d.GetFacesForEdge(i);
+                Point3d Q0 = mesh2d.Vertices[mesh2d.Edges[i][0]];
+                Point3d Q1 = mesh2d.Vertices[mesh2d.Edges[i][1]];
+                Vector3d Q0Q1 = Q1 - Q0;
+                double l2 = Q0Q1.SquareLength;
+                Point3d M = (Q0 + Q1) * 0.5;
+                List<bool> bools = new List<bool>();
+                List<Vector3d> vecs = new List<Vector3d>();
+                int j = 0;
+                foreach (int face in faces)
+                {
+                    vecStart.Add(M);
+                    Point3d P = mesh2d.Vertices[mesh2d.GetVerticesForFace(face).Where(v => v != mesh2d.Edges[i][0] && v != mesh2d.Edges[i][1]).ToList()[0]];
+                    Vector3d Q0P = P - Q0;
+                    double dot = Q0Q1 * Q0P;
+                    Vector3d HP = Q0P - (dot / l2) * Q0Q1;
+                    double diff = HP.Length - initialHeight[i][j];
+                    if (diff > 0) { bools.Add(true); }
+                    else { bools.Add(false); }
+                    HP.Unitize();
+                    vecs.Add(diff * HP);
+                    j++;
+                }
+                positive.Add(bools);
+                edgeVec.Add(vecs);
+            }
+            List<bool> positiveFlat = positive.SelectMany(x => x).ToList();
+            List<Vector3d> edgeVecFlat = edgeVec.SelectMany(x => x).ToList();
+            return (vecStart, positive, edgeVec);
+        }
+
+        public static List<List<double>> EdgeVecDiff(List<List<double>> initialHeight, CutMesh mesh2d)
+        {
+            List<List<double>> diff = new List<List<double>>();
+            List<List<bool>> positive = new List<List<bool>>();
+            List<List<Vector3d>> edgeVec = new List<List<Vector3d>>();
+            for (int i = 0; i < mesh2d.Edges.Count; i++)
+            {
+                List<int> faces = mesh2d.GetFacesForEdge(i);
+                Point3d Q0 = mesh2d.Vertices[mesh2d.Edges[i][0]];
+                Point3d Q1 = mesh2d.Vertices[mesh2d.Edges[i][1]];
+                Vector3d Q0Q1 = Q1 - Q0;
+                double l2 = Q0Q1.SquareLength;
+                Point3d M = (Q0 + Q1) * 0.5;
+                List<bool> bools = new List<bool>();
+                List<Vector3d> vecs = new List<Vector3d>();
+                List<double> doubles = new List<double>();
+                int j = 0;
+                foreach (int face in faces)
+                {
+                    Point3d P = mesh2d.Vertices[mesh2d.GetVerticesForFace(face).Where(v => v != mesh2d.Edges[i][0] && v != mesh2d.Edges[i][1]).ToList()[0]];
+                    Vector3d Q0P = P - Q0;
+                    double dot = Q0Q1 * Q0P;
+                    Vector3d HP = Q0P - (dot / l2) * Q0Q1;
+                    double delta = (HP.Length - initialHeight[i][j])/initialHeight[i][j];
+                    doubles.Add(delta);
+                    j++;
+                }
+                diff.Add(doubles);
+            }
+            return diff;
+        }
+
+
+        public static List<List<double>> GetInitialHeight(CutMesh mesh)
+        {
+            List<List<double>> initialHeight = new List<List<double>>();
+            for (int i = 0; i < mesh.Edges.Count; i++)
+            {
+                List<double> height = new List<double>();
+                List<int> faces = mesh.GetFacesForEdge(i);
+                Point3d Q0 = mesh.Vertices[mesh.Edges[i][0]];
+                Point3d Q1 = mesh.Vertices[mesh.Edges[i][1]];
+                Vector3d Q0Q1 = Q1 - Q0;
+                double l = Q0Q1.Length;
+                foreach (int face in faces)
+                {
+                    Point3d P = mesh.Vertices[mesh.GetVerticesForFace(face).Where(v => v != mesh.Edges[i][0] && v != mesh.Edges[i][1]).ToList()[0]];
+                    Vector3d Q0P = P - Q0;
+                    double dot = Q0Q1 * Q0P;
+                    Vector3d HP = Q0P - (dot / (l * l)) * Q0Q1;
+                    height.Add(HP.Length);
+                }
+                initialHeight.Add(height);
+            }
+            return initialHeight;
+        }
+
+        public static List<int> FindNextCutEdge(CutMesh mesh3d, CutMesh mesh2d)
+        {
+            List<List<double>> initialHeight = GetInitialHeight(mesh3d);
+            List<List<double>> edgeVecDiffs = EdgeVecDiff(initialHeight, mesh2d);
+            List<double> DiffTotal = new List<double>();
+            foreach (List<double> diffs in edgeVecDiffs)
+            {
+                if (diffs.Count <= 1) { DiffTotal.Add(double.MinValue); continue; }
+                double total = 0;
+                foreach (double diff in diffs) { total += diff; }
+                DiffTotal.Add(total);
+            }
+            double maxValue = DiffTotal.Max();
+            // 最大値のインデックスを取得
+            int maxIndex = DiffTotal.IndexOf(maxValue);
+            HashSet<int> boundaryVerts = mesh2d.BoundaryVertIndices().ToHashSet();
+            int[] edgeVerts = mesh2d.Edges[maxIndex];
+            if (boundaryVerts.Contains(edgeVerts[0]) || boundaryVerts.Contains(edgeVerts[1])) { return new List<int> { maxIndex }; }
+            else
+            {
+                HashSet<int> edgeList = mesh2d.GetEdgesForVertex(edgeVerts[0]).ToHashSet();
+                edgeList.UnionWith(mesh2d.GetEdgesForVertex(edgeVerts[1]).ToHashSet());
+                edgeList.Remove(maxIndex);
+                int secondIndex = edgeList.OrderByDescending(i => DiffTotal[i]).First();
+                return new List<int> { maxIndex, secondIndex };
+            }
+        }
+
+        public static List<int> FindNextCutEdgeNoBranch(CutMesh mesh3d, CutMesh mesh2d, int startVert, int endVert)
+        {
+            List<List<double>> initialHeight = GetInitialHeight(mesh3d);
+            List<List<double>> edgeVecDiffs = EdgeVecDiff(initialHeight, mesh2d);
+            List<double> DiffTotal = new List<double>();
+            foreach (List<double> diffs in edgeVecDiffs)
+            {
+                if (diffs.Count <= 1) { DiffTotal.Add(double.MinValue); continue; }
+                double total = 0;
+                foreach (double diff in diffs) { total += diff; }
+                DiffTotal.Add(total);
+            }
+            double maxValue = DiffTotal.Max();
+            // 最大値のインデックスを取得
+            int maxIndex = DiffTotal.IndexOf(maxValue);
+            HashSet<int> boundaryVerts = mesh2d.BoundaryVertIndices().ToHashSet();
+            int[] edgeVerts = mesh2d.Edges[maxIndex];
+            if (boundaryVerts.Contains(edgeVerts[0]) || boundaryVerts.Contains(edgeVerts[1])) { return new List<int> { maxIndex }; }
+            else
+            {
+                HashSet<int> edgeList = mesh2d.GetEdgesForVertex(edgeVerts[0]).ToHashSet();
+                edgeList.UnionWith(mesh2d.GetEdgesForVertex(edgeVerts[1]).ToHashSet());
+                edgeList.Remove(maxIndex);
+                int secondIndex = edgeList.OrderByDescending(i => DiffTotal[i]).First();
+                return new List<int> { maxIndex, secondIndex };
+            }
+        }
     }
 }

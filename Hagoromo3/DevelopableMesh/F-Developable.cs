@@ -12,6 +12,9 @@ using System.Linq;
 using System.Security.Policy;
 using System.Xml.Linq;
 using static Hagoromo.GeometryTools.MeshCalcTools;
+using static Hagoromo.GeometryTools.CutMeshCalcTools;
+using static Hagoromo.DevelopableMesh.DevelopableTools;
+using static Hagoromo.DevelopableMesh.CGNR3D;
 
 namespace Hagoromo.DevelopableMesh
 {
@@ -6935,6 +6938,110 @@ namespace Hagoromo.DevelopableMesh
                 }
             }
             builder.NextRow();
+        }
+
+        public static void DevelopCGLS(CutMesh cutMesh, List<int> sortedOuterVertIndices, int outerIter, int innerIter)
+        {
+            List<List<int>> duplicatedVertIndices = cutMesh.DuplicatedVertIndices;
+            int dupVertCount = duplicatedVertIndices.Count;
+            int variableCount = dupVertCount * 3;
+
+            int[] vertOrderInDup = cutMesh.VertOrderInDup();
+            List<List<int>> dupConnectedVertIndices = cutMesh.DupConnectedVertIndices();
+            List<int> sortedFixVertIndices = cutMesh.BoundaryVertIndices();
+            List<List<List<int>>> category = CategolizeCutMesh(cutMesh, false, false, false, sortedOuterVertIndices, sortedFixVertIndices);
+            List<bool[]> moveList = CategoryToMoveList(cutMesh.Vertices.Count, category, sortedFixVertIndices);
+            HashSet<int> unMoveSet = MoveListToUnMoveSet(moveList, vertOrderInDup);
+
+            HashSet<int> unMoveSetSmooth = new HashSet<int>(unMoveSet);
+            /*
+            foreach (int i in sortedUnSmoothVertIndices)
+            {
+                int id = vertOrderInDup[i] * 3;
+                unMoveSetSmooth.Add(id);
+                unMoveSetSmooth.Add(id + 1);
+                unMoveSetSmooth.Add(id + 2);
+            }
+            */
+            List<int> boundaryVerts = cutMesh.BoundaryVertIndices();
+            foreach (int i in boundaryVerts)
+            {
+                int id = vertOrderInDup[i] * 3;
+                unMoveSetSmooth.Add(id);
+                unMoveSetSmooth.Add(id + 1);
+                unMoveSetSmooth.Add(id + 2);
+            }
+
+
+
+            var loopLength = CalcLoopLength(cutMesh, category[5], category[9]);
+            List<double> aveLengthDone = loopLength.DoneAveLength;
+            List<double> aveLengthF = loopLength.FblocksAveLength;
+
+            List<Dictionary<int, List<int>>> DoneMaps = MakeMaps(cutMesh, category[1], vertOrderInDup);
+            List<Dictionary<int, List<int>>> FMaps = MakeMaps(cutMesh, category[9], vertOrderInDup);
+
+            List<int[]> cullDupEdges = CullDupEdges(cutMesh, vertOrderInDup);
+            double[] initialLength = new double[cullDupEdges.Count];
+            for (int i = 0; i < cullDupEdges.Count; i++)
+            {
+                int[] edge = cullDupEdges[i];
+                Point3d p0 = cutMesh.Vertices[edge[0]];
+                Point3d p1 = cutMesh.Vertices[edge[1]];
+                initialLength[i] = p0.DistanceTo(p1);
+            }
+
+            //w1～w6の設定
+            double[] w = new double[] { 100.0, 100.0, 100, 100.0, 100.0, 100.0 };
+            //double[] w = new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 };
+            //--------------------------------------------------データの準備 終-------------------------------------------------
+
+
+            //最適化するものの箱を準備
+            var optimizer = new GaussNewtonOptimizer(variableCount);
+
+            List<Point3d> dupInitialPosition = new List<Point3d>();
+            // 初期座標のセット
+            for (int i = 0; i < dupVertCount; i++)
+            {
+                Point3d point = cutMesh.Vertices[duplicatedVertIndices[i][0]];
+                dupInitialPosition.Add(point);
+                optimizer.X[3 * i] = point.X;
+                optimizer.X[3 * i + 1] = point.Y;
+                optimizer.X[3 * i + 2] = point.Z;
+            }
+
+            // ------------------------等式制約の追加-------------------------------------------
+
+            //optimizer.AddTerm(new MinMaxLengthCGLS3D(lenRangeW, cullDupEdges, vertOrderInDup, initialLength, unMoveSet));
+
+            optimizer.AddTerm(new EdgeLengthCGLS3D(1, cullDupEdges, vertOrderInDup, initialLength, unMoveSet));
+
+            var devTerm = new DevelopableCGLS(10000, cutMesh, category, aveLengthDone, aveLengthF, w, moveList, DoneMaps, FMaps);
+            optimizer.AddTerm(devTerm);
+
+            optimizer.AddTerm(new SmoothingCGLS(1000000, dupConnectedVertIndices, unMoveSetSmooth));
+
+            optimizer.AddTerm(new VertMoveCGLS(1000, dupInitialPosition, unMoveSet));
+            // ----不等式制約の追加（別に等式と特段変わりはない、その制約のクラス内で条件満たすかどうかでの処理を書くかどうかの違い）---
+
+            //optimizer.AddTerm(new MinLengthTerm(100.0, cullDupEdges, 15, vertOrderInDup));
+
+
+            //計算実行
+            optimizer.Step(outerIter: outerIter, innerIter: innerIter);
+            //optimizer.Step(outerIter: 1, innerIter: 100);
+
+            //求めたxをcutMeshのverticesに適用する
+            for (int i = 0; i < dupVertCount; i++)
+            {
+                List<int> vertGroup = duplicatedVertIndices[i];
+                Point3d point = new Point3d(optimizer.X[3 * i], optimizer.X[3 * i + 1], optimizer.X[3 * i + 2]);
+                foreach (int vertIndex in vertGroup)
+                {
+                    cutMesh.Vertices[vertIndex] = point;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,131 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+  <PropertyGroup>
+    <!-- Select the framework(s) you wish to target.
+        Rhino 6: net45
+        Rhino 7: net48
+        Rhino 8 Windows: net48, net7.0, net7.0-windows, net7.0-windows10.0.22000.0, etc
+        Rhino 8 Mac: net7.0, net7.0-macos, net7.0-macos12.0, etc
+    -->
+    <TargetFrameworks>net7.0-windows;net7.0;net48</TargetFrameworks>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <TargetExt>.gha</TargetExt>
+    <NoWarn>NU1701;NETSDK1086</NoWarn>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <!-- Specifies information for Assembly and Yak -->
+    <Version>1.0</Version>
+    <Title>Hagoromo</Title>
+    <Company>Hagoromo Authors</Company>
+    <Description>Description of Hagoromo</Description>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="C-Elem.cs" />
+    <Compile Remove="C-LinearStress.cs" />
+    <Compile Remove="C-test1.cs" />
+    <Compile Remove="DevelopableMesh\C-CheckRuling.cs" />
+    <Compile Remove="DevelopableMesh\C-CutChoiceOneSeed.cs" />
+    <Compile Remove="DevelopableMesh\C-DevelopCutMesh4.cs" />
+    <Compile Remove="DevelopableMesh\C-DevelopMesh1.cs" />
+    <Compile Remove="DevelopableMesh\C-DevelopMesh2.cs" />
+    <Compile Remove="DevelopableMesh\C-GaussianCrv.cs" />
+    <Compile Remove="DevelopableMesh\C-MeshNet.cs" />
+    <Compile Remove="DevelopableMesh\C-MeshNet5.cs" />
+    <Compile Remove="DevelopableMesh\C-MeshNet6.cs" />
+    <Compile Remove="GeometryTools\C-MeshTree.cs" />
+    <Compile Remove="GeometryTools\MyComponent1.cs" />
+    <Compile Remove="Heuristic\C-NSGAIIforCutMesh.cs" />
+    <Compile Remove="Heuristic\C-NSGAIIsample.cs" />
+    <Compile Remove="LinearBeam1.cs" />
+    <Compile Remove="MyComponent1.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Cloo.clSharp" Version="1.0.1" />
+    <PackageReference Include="Grasshopper" Version="7.0.20314.3001" Condition="$(TargetFramework) == 'net48'" ExcludeAssets="runtime" />
+    <PackageReference Include="Grasshopper" Version="8.0.23304.9001" Condition="!$(TargetFramework.StartsWith('net4'))" ExcludeAssets="runtime" />
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+  </ItemGroup>
+  
+  <!-- For Windows only builds -->
+  <PropertyGroup Condition="$(TargetFramework.Contains('-windows')) or $(TargetFramework.StartsWith('net4'))">
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <!-- Reference WinForms for .NET 7.0 on macOS -->
+  <ItemGroup Condition="!($(TargetFramework.Contains('-windows')) or $(TargetFramework.StartsWith('net4')))">
+    <!-- Rhino 8.11 and later you can use this -->
+    <!-- <FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" /> -->
+    
+    <!-- Rhino 8.10 and earlier -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" ExcludeAssets="all" GeneratePathProperty="true" />
+    <Reference Include="$(PkgMicrosoft_NETFramework_ReferenceAssemblies_net48)\build\.NETFramework\v4.8\System.Windows.Forms.dll" Private="False" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HEAL.Attic">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HEAL.Attic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Algorithms.NSGA2-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Algorithms.NSGA2-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Clients.Common-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Clients.Common-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Collections-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Collections-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Common-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Common-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Core-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Core-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Data-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Data-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Encodings.RealVectorEncoding-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Encodings.RealVectorEncoding-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Optimization-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Optimization-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.ParallelEngine-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.ParallelEngine-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Parameters-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Parameters-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.Problems.Programmable-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.Problems.Programmable-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HeuristicLab.SequentialEngine-3.3">
+      <HintPath>..\..\..\..\..\Program Files\HeuristicLab 3.3.16\HeuristicLab.SequentialEngine-3.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RhinoCommon">
+      <HintPath>..\..\..\..\..\Program Files\Rhino 8\System\RhinoCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyPdbForMonoDebugging" AfterTargets="AfterBuild">
+    <!-- Enable debugging in Rhino 6/7 on Mac -->
+    <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFiles="$(TargetDir)$(TargetName).gha.pdb" Condition="$([MSBuild]::IsOSPlatform(OSX)) and $(TargetFramework.StartsWith('net4')) and Exists('$(TargetDir)$(TargetName).pdb')" />
+  </Target>
+
+</Project>

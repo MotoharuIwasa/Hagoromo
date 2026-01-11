@@ -2,6 +2,7 @@
 using Grasshopper.Kernel;
 using Hagoromo.GeometryTools;
 using Hagoromo.MathTools;
+using HeuristicLab.Data;
 using Rhino;
 using Rhino.Geometry;
 using Rhino.Geometry.Collections;
@@ -11,8 +12,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using static Hagoromo.GeometryTools.CutMeshCalcTools;
 using static Hagoromo.DevelopableMesh.DevelopableTools;
+using static Hagoromo.GeometryTools.CutMeshCalcTools;
 
 namespace Hagoromo.DevelopableMesh
 {
@@ -69,6 +70,84 @@ namespace Hagoromo.DevelopableMesh
             }
         }
     }
+
+    public class MinMaxLengthCGLS3D : LeastSquaresTerm
+    {
+        private List<int[]> cullDupEdges;
+        private int[] vertOrderInDup;
+        //initialLengthはcullDupEdgesの長さを入れたもの
+        private double[] initialLength;
+        //ミラーなどの都合で動けない要素のx[]での位置（x[]は動けないdupVertの座標もすべて入れておく)
+        private HashSet<int> unMoveSet;
+
+        public MinMaxLengthCGLS3D(double weight, List<int[]> cullDupEdges, int[] vertOrderInDup, double[] initialLength, HashSet<int> unMoveSet) : base(weight)
+        {
+            //重複しているエッジは取り除いたエッジのリスト
+            this.cullDupEdges = cullDupEdges;
+            this.vertOrderInDup = vertOrderInDup;
+            this.initialLength = initialLength;
+            this.unMoveSet = unMoveSet;
+        }
+
+        public override void AddToSystem(double[] x, ConstraintBuilder builder)
+        {
+            for (int i = 0; i < cullDupEdges.Count; i++)
+            {
+                int[] edge = cullDupEdges[i];
+                int i1 = vertOrderInDup[edge[0]] * 3;
+                int i2 = vertOrderInDup[edge[1]] * 3;
+
+                double dx = x[i1] - x[i2];
+                double dy = x[i1 + 1] - x[i2 + 1];
+                double dz = x[i1 + 2] - x[i2 + 2];
+                double len = Math.Sqrt(dx * dx + dy * dy + dz * dz);
+                double initLen = initialLength[i];
+                double diff = 0;
+                if (initLen * 0.1 > len)
+                {
+                   diff = len - initialLength[i] * 0.3;
+                }
+                if (initLen * 2 < len)
+                {
+                   diff = len - initialLength[i];
+                }
+                if (initLen * 0.1 > len || initLen * 2 < len)
+                {
+                    // 0除算対策
+                    if (len < 1e-9) len = 0.001;
+
+                    // 勾配計算 (J^T * R)
+                    // Force magnitude = weight * (current - rest)
+                    double wxdiff = Weight * diff;
+                    double factor = Weight / len;
+
+                    double fx = factor * dx;
+                    double fy = factor * dy;
+                    double fz = factor * dz;
+                    double[] g = new double[6];
+                    if (!unMoveSet.Contains(i1 + 0)) { g[0] = fx; }
+                    if (!unMoveSet.Contains(i1 + 1)) { g[1] = fy; }
+                    if (!unMoveSet.Contains(i1 + 2)) { g[2] = fz; }
+
+                    // 頂点v2に減算 (反作用)
+                    if (!unMoveSet.Contains(i2 + 0)) { g[3] = -fx; }
+                    if (!unMoveSet.Contains(i2 + 1)) { g[4] = -fy; }
+                    if (!unMoveSet.Contains(i2 + 2)) { g[5] = -fz; }
+                    builder.AddConstraint(
+                            -wxdiff,
+                            // 勾配のリスト (col, val)
+                            (i1 + 0, g[0]),
+                            (i1 + 1, g[1]),
+                            (i1 + 2, g[2]),
+                            (i2 + 0, g[3]),
+                            (i2 + 1, g[4]),
+                            (i2 + 2, g[5])
+                        );
+                }
+            }
+        }
+    }
+
 
     //エッジの長さ保存（等式制約)
     public class EdgeLengthCGLS3D : LeastSquaresTerm
@@ -195,6 +274,37 @@ namespace Hagoromo.DevelopableMesh
                 builder.AddResidual(myRowIndex2, -vec.Y);
                 builder.AddResidual(myRowIndex3, -vec.Z);
 
+            }
+        }
+
+    }
+
+    //周りの点の平均とするスムージング制約
+    public class VertMoveCGLS : LeastSquaresTerm
+    {
+        //ミラーなどの都合で動けない要素のx[]での位置（x[]は動けないdupVertの座標もすべて入れておく)
+        private HashSet<int> unMoveSet;
+
+        private List<Point3d> dupInitialPosition;
+
+        public VertMoveCGLS(double weight, List<Point3d> dupInitialPosition, HashSet<int> unMoveSet)
+            : base(weight)
+        {
+            this.dupInitialPosition = dupInitialPosition;
+            // 配列をHashSetに変換しておく（O(N) -> O(1)）
+            this.unMoveSet = new HashSet<int>(unMoveSet);
+        }
+
+        public override void AddToSystem(double[] x, ConstraintBuilder builder)
+        {
+            for (int i = 0; i < dupInitialPosition.Count; i++)
+            {
+                int i3 = i * 3;
+                Point3d current = new Point3d(x[i3 + 0], x[i3 + 1], x[i3 + 2]);
+                Vector3d vec = Weight * (dupInitialPosition[i] - current);
+                builder.AddConstraint(vec.X, (i3 + 0, Weight));
+                builder.AddConstraint(vec.Y, (i3 + 1, Weight));
+                builder.AddConstraint(vec.Z, (i3 + 2, Weight));
             }
         }
 
@@ -446,7 +556,8 @@ namespace Hagoromo.DevelopableMesh
                 int n = loopCos.Count;
                 double value = w3 * (n + 4) * Math.PI / aveLength;
 
-
+                //発散防止
+                if (loopLength.Min() < aveLength * 0.001) { continue; }
                 //-----------------------------------------------sinのエネルギー----------------------------------------
                 double s = CalcFSinFactor(loopLength, loopSin);
                 double E1 = s * value;
